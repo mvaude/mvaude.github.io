@@ -1,0 +1,47 @@
+baseURL = "mvaude.github.io"
+languageCode = "en"
+title = "MV"
+theme = "coder"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disable_comments = true
+
+[params]
+    author = "Maxime Vaude"
+    description = "Maxime Vaude's personal website"
+    keywords = "blog,developer,personal"
+    info = "Consultant, Developer and Entrepreneur"
+
+    hideCredits = true
+    hideCopyright = true
+
+    # Custom CSS
+	custom_css = []
+
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/mvaude/"
+[[params.social]]
+    name = "Twitter"
+    weight = 2
+    url = "https://twitter.com/johndoe/"
+[[params.social]]
+    name = "LinkedIn"
+    weight = 3
+    url = "https://www.linkedin.com/in/maxime.vaude/"
+
+[[menu.main]]
+    name = "Notes"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
