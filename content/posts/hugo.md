@@ -1,19 +1,19 @@
 +++
 draft = false
 date = "2018-06-04"
-title = "Hugo Cheatsheet"
-slug = "cheatsheet"
+title = "Hugo"
+slug = "hugo"
 tags = ["cheatsheet", "golang", "web", "tools"]
 categories = ["tools", "web", "cheatsheet", "golang"]
 +++
 
-## Create a New Site
+##### Create a New Site
 
 ```
 hugo new site [SITE_NAME]
 ```
 
-## Add a theme
+##### Add a theme
 
 ```
 cd [SITE_NAME]
