@@ -1,6 +1,9 @@
 languageCode = "en"
 title = "MV"
+
 theme = "coder"
+
+languagecode = "en"
 
 paginate = 20
 canonifyurls = true
