@@ -1,3 +1,8 @@
++++
+title = "About Me"
+slug = "about"
++++
+
 ## Motivations
 - Taste of challenge, diversity in search of perfection
 - Taste of exchange and human contact.
