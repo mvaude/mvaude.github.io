@@ -1,4 +1,4 @@
 [submodule "themes/coder"]
 	path = themes/coder
-	url = git@github.com:mvaude/hugo-coder
+	url = https://github.com/mvaude/hugo-coder
 	branch = master
