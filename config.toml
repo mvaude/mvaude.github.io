@@ -35,11 +35,11 @@ googleanalytics = "UA-120354426-1"
 [[params.social]]
     name = "Twitter"
     weight = 2
-    url = "https://twitter.com/johndoe/"
+    url = "https://twitter.com/wefirm/"
 [[params.social]]
     name = "LinkedIn"
     weight = 3
-    url = "https://www.linkedin.com/in/maxime.vaude/"
+    url = "https://www.linkedin.com/in/maxime-vaude-8b22465a/"
 
 [[menu.main]]
     name = "Notes"
