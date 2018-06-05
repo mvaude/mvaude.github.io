@@ -13,6 +13,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 disable_comments = true
+disqusShortname = "mvaude"
 
 googleanalytics = "UA-120354426-1"
 
