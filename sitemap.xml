@@ -3,81 +3,81 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>mvaude.github.io/posts/cheatsheet/</loc>
+    <loc>/posts/cheatsheet/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>mvaude.github.io/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>mvaude.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/tags/cheatsheet/</loc>
-    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>mvaude.github.io/categories/cheatsheet/</loc>
+    <loc>/tags/cheatsheet/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/tags/golang/</loc>
+    <loc>/categories/cheatsheet/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/categories/golang/</loc>
+    <loc>/tags/golang/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/</loc>
+    <loc>/categories/golang/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/posts/</loc>
+    <loc>/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/tags/</loc>
+    <loc>/posts/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/tags/tools/</loc>
+    <loc>/tags/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/categories/tools/</loc>
+    <loc>/tags/tools/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/tags/web/</loc>
+    <loc>/categories/tools/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mvaude.github.io/categories/web/</loc>
+    <loc>/tags/web/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/web/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

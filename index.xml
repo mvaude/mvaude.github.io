@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MV</title>
-    <link>mvaude.github.io/</link>
+    <link>/</link>
     <description>Recent content on MV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="mvaude.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo Cheatsheet</title>
-      <link>mvaude.github.io/posts/cheatsheet/</link>
+      <link>/posts/cheatsheet/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>mvaude.github.io/posts/cheatsheet/</guid>
+      <guid>/posts/cheatsheet/</guid>
       <description>Create a New Site hugo new site [SITE_NAME] Add a theme cd [SITE_NAME] git init git submodule add [THEME_REPO_URL] echo &amp;#39;theme = &amp;#34;[THEME_NAME]&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>mvaude.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>mvaude.github.io/about/</guid>
+      <guid>/about/</guid>
       <description> Motivations  Taste of challenge, diversity in search of perfection Taste of exchange and human contact. Adaptability and optimization of work methodologies according to missions and teams Autonomy in the choice of technologies by targeting innovation and efficiency  Areas of expertise  Develop data analysis tools Design solutions based on cloud or hybrid architecture Develop Release and Quality Assurance solutions and methodologies for Continuous Integration and Continuous Delivery Share and develop an innovative technological vision  Challenges  Implement cyber security solutions in the company and raise awareness / educate its various actors Develop Artificial Intelligences to improve human relations and optimize certain interactions Design financial optimization solutions Develop Central Home Computer solutions  </description>
     </item>
     
