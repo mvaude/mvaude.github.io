@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheatsheet on MV</title>
-    <link>/tags/cheatsheet/</link>
+    <link>http://mvaude.github.io/tags/cheatsheet/</link>
     <description>Recent content in Cheatsheet on MV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://mvaude.github.io/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo Cheatsheet</title>
-      <link>/posts/cheatsheet/</link>
+      <link>http://mvaude.github.io/posts/cheatsheet/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/cheatsheet/</guid>
+      <guid>http://mvaude.github.io/posts/cheatsheet/</guid>
       <description>Create a New Site hugo new site [SITE_NAME] Add a theme cd [SITE_NAME] git init git submodule add [THEME_REPO_URL] echo &amp;#39;theme = &amp;#34;[THEME_NAME]&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.</description>
     </item>
     
