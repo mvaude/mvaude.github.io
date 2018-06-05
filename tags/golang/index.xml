@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Hugo Cheatsheet</title>
-      <link>http://mvaude.github.io/posts/cheatsheet/</link>
+      <title>Hugo</title>
+      <link>http://mvaude.github.io/posts/hugo/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mvaude.github.io/posts/cheatsheet/</guid>
+      <guid>http://mvaude.github.io/posts/hugo/</guid>
       <description>Create a New Site hugo new site [SITE_NAME] Add a theme cd [SITE_NAME] git init git submodule add [THEME_REPO_URL] echo &amp;#39;theme = &amp;#34;[THEME_NAME]&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.</description>
     </item>
     
