@@ -11,10 +11,10 @@
 
     <base href="mvaude.github.io">
     <title>
-  Categories · MV
+  Hugo Cheatsheet · MV
 </title>
 
-    <link rel="canonical" href="mvaude.github.io/categories/">
+    <link rel="canonical" href="mvaude.github.io/posts/cheatsheet/">
 
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
@@ -25,9 +25,6 @@
     <link rel="icon" type="image/png" href="mvaude.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="mvaude.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    
-      <link href="mvaude.github.io/categories/index.xml" rel="alternate" type="application/rss+xml" title="MV" />
-      <link href="mvaude.github.io/categories/index.xml" rel="feed" type="application/rss+xml" title="MV" />
     
 
     <meta name="generator" content="Hugo 0.41" />
@@ -59,36 +56,32 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Categories</h1>
-  <ul>
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Hugo Cheatsheet</h1>
+      <h2 class="date">June 4, 2018</h2>
+
+      
+    </header>
+
     
-    <li>
-      <span>June 4, 2018</span><a href="mvaude.github.io/categories/cheatsheet/">Cheatsheet</a>
-    </li>
-    
-    <li>
-      <span>June 4, 2018</span><a href="mvaude.github.io/categories/golang/">Golang</a>
-    </li>
-    
-    <li>
-      <span>June 4, 2018</span><a href="mvaude.github.io/categories/tools/">Tools</a>
-    </li>
-    
-    <li>
-      <span>June 4, 2018</span><a href="mvaude.github.io/categories/web/">Web</a>
-    </li>
-    
-  </ul>
+
+<h2 id="create-a-new-site">Create a New Site</h2>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo new site [SITE_NAME]</pre></div>
+<h2 id="add-a-theme">Add a theme</h2>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">cd [SITE_NAME]
+git init
+git submodule add [THEME_REPO_URL]
+
+echo &#39;theme = &#34;[THEME_NAME]&#34;&#39; &gt;&gt; config.toml</pre></div>
+  </article>
+
+  <br/>
+
   
-
-
-
-
-
-
+  
 </section>
-
 
       </div>
 
