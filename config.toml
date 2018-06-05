@@ -20,7 +20,7 @@ googleanalytics = "UA-120354426-1"
     author = "Maxime Vaude"
     description = "Maxime Vaude's personal website"
     keywords = "blog,developer,personal"
-    info = "Consultant, Developer and Entrepreneur"
+    info = "Developer and Entrepreneur"
 
     hideCredits = true
     hideCopyright = true
