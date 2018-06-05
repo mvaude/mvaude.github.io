@@ -10,6 +10,7 @@ install:
     - rm -rf public 2> /dev/null
 
 script:
+    - git submodule update --init --remote --recursive
     - hugo
 
 deploy:
