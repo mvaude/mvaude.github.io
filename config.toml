@@ -1,5 +1,4 @@
 baseurl = "http://mvaude.github.io"
-languageCode = "en"
 title = "MV"
 
 theme = "coder"
@@ -14,6 +13,8 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 disable_comments = true
+
+googleanalytics = "UA-120354426-1"
 
 [params]
     author = "Maxime Vaude"
