@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on MV</title>
-    <link>http://mvaude.github.io/posts/</link>
-    <description>Recent content in Posts on MV</description>
+    <title>System on MV</title>
+    <link>http://mvaude.github.io/categories/system/</link>
+    <description>Recent content in System on MV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Jun 2018 07:22:06 +0200</lastBuildDate>
     
-	<atom:link href="http://mvaude.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://mvaude.github.io/categories/system/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
 He makes really go video to explain Unraid OS concepts.
 VMs Configurations Windows 10 VMs with GPU Passthrough The purpose is to create a Windows 10 KVM VM with a dedicated GPU to have optimal performances.
 Stage 1: Setup the VM without any passed through hardware I. Download a copy of the latest windows 10 iso You can download the official image from here.</description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>http://mvaude.github.io/posts/hugo/</link>
-      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mvaude.github.io/posts/hugo/</guid>
-      <description>hugo is a static website generator developed in golang.
-Create a New Site hugo new site [SITE_NAME] Add a theme cd [SITE_NAME] git init git submodule add [THEME_REPO_URL] echo &amp;#39;theme = &amp;#34;[THEME_NAME]&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.</description>
     </item>
     
   </channel>
