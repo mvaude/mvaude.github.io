@@ -7,6 +7,8 @@ tags = ["cheatsheet", "golang", "web", "tools"]
 categories = ["tools", "web", "cheatsheet", "golang"]
 +++
 
+`hugo` is a static website generator developed in golang.
+
 ##### Create a New Site
 
 ```
