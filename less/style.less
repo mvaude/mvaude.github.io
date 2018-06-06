@@ -350,11 +350,35 @@ img {
   float: left;
 }
 
-.cursor {
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes "blink" {
+@-webkit-keyframes blink {
   from, to { color: transparent; }
   50% { color: black; }
+}
+
+@-ms-keyframes blink {
+  from, to { color: transparent; }
+  50% { color: black; }
+}
+
+@-moz-keyframes blink {
+  from, to { color: transparent; }
+  50% { color: black; }
+}
+
+@-o-keyframes blink {
+  from, to { color: transparent; }
+  50% { color: black; }
+}
+
+@keyframes blink {
+  from, to { color: transparent; }
+  50% { color: black; }
+}
+
+.cursor {
+  -webkit-animation: blink 1s step-end infinite;
+  -ms-animation: blink 1s step-end infinite;
+  -moz-animation: blink 1s step-end infinite;
+  -o-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
 }
