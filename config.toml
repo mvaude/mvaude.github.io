@@ -1,5 +1,5 @@
 baseurl = "http://mvaude.github.io"
-title = "MV"
+title = "Software Developer and Entrepreneur"
 
 theme = "coder"
 
@@ -20,8 +20,8 @@ googleanalytics = "UA-120354426-1"
 [params]
     author = "Maxime Vaude"
     description = "Maxime Vaude's personal website"
-    keywords = "blog,developer,personal"
-    info = "Developer and Entrepreneur"
+    keywords = "software,developer,entrepreneur,app"
+    info = "Software Developer and Entrepreneur"
 
     hideCredits = true
     hideCopyright = true
