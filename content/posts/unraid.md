@@ -9,7 +9,7 @@ categories = ["system", "linux", "kvm", "os"]
 
 A lot of the information here come from [this guy](https://www.youtube.com/channel/UCZDfnUn74N0WeAPvMqTOrtA/featured).
 
-He makes really go video to explain Unraid OS concepts.
+He makes really good videos to explain Unraid OS concepts.
 
 # VMs Configurations
 
