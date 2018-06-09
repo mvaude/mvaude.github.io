@@ -1,7 +1,7 @@
 +++
 draft = false
 date = 2018-06-05T07:22:06+02:00
-title = "Unraid OS"
+title = "Unraid OS Windows 10 VM"
 slug = "unraid"
 tags = ["system", "linux", "kvm", "os"]
 categories = ["system", "linux", "kvm", "os"]
@@ -10,8 +10,6 @@ categories = ["system", "linux", "kvm", "os"]
 A lot of the information here come from [this guy](https://www.youtube.com/channel/UCZDfnUn74N0WeAPvMqTOrtA/featured).
 
 He makes really good videos to explain Unraid OS concepts.
-
-# VMs Configurations
 
 ## Windows 10 VMs with GPU Passthrough
 
