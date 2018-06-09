@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Developer and Entrepreneur</title>
-    <link>http://mvaude.github.io/</link>
+    <link>https://mvaude.github.io/</link>
     <description>Recent content on Software Developer and Entrepreneur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Jun 2018 07:22:06 +0200</lastBuildDate>
     
-	<atom:link href="http://mvaude.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mvaude.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Unraid OS Windows 10 VM</title>
-      <link>http://mvaude.github.io/posts/unraid/</link>
+      <link>https://mvaude.github.io/posts/unraid/</link>
       <pubDate>Tue, 05 Jun 2018 07:22:06 +0200</pubDate>
       
-      <guid>http://mvaude.github.io/posts/unraid/</guid>
+      <guid>https://mvaude.github.io/posts/unraid/</guid>
       <description>A lot of the information here come from this guy.
 He makes really good videos to explain Unraid OS concepts.
 Windows 10 VMs with GPU Passthrough The purpose is to create a Windows 10 KVM VM with a dedicated GPU to have optimal performances.
@@ -25,20 +25,20 @@ Stage 1: Setup the VM without any passed through hardware I. Download a copy of 
     
     <item>
       <title>Hugo</title>
-      <link>http://mvaude.github.io/posts/hugo/</link>
+      <link>https://mvaude.github.io/posts/hugo/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mvaude.github.io/posts/hugo/</guid>
+      <guid>https://mvaude.github.io/posts/hugo/</guid>
       <description>hugo is a static website generator developed in golang.
 Create a New Site hugo new site [SITE_NAME] Add a theme cd [SITE_NAME] git init git submodule add [THEME_REPO_URL] echo &amp;#39;theme = &amp;#34;[THEME_NAME]&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>http://mvaude.github.io/about/</link>
+      <link>https://mvaude.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://mvaude.github.io/about/</guid>
+      <guid>https://mvaude.github.io/about/</guid>
       <description> Motivations  Taste of challenge, diversity in search of perfection Taste of exchange and human contact. Adaptability and optimization of work methodologies according to missions and teams Autonomy in the choice of technologies by targeting innovation and efficiency  Areas of expertise  Develop data analysis tools Design solutions based on cloud or hybrid architecture Develop Release and Quality Assurance solutions and methodologies for Continuous Integration and Continuous Delivery Share and develop an innovative technological vision  Challenges  Implement cyber security solutions in the company and raise awareness / educate its various actors Develop Artificial Intelligences to improve human relations and optimize certain interactions Design financial optimization solutions Develop Central Home Computer solutions  </description>
     </item>
     

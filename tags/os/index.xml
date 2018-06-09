@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Os on Software Developer and Entrepreneur</title>
-    <link>http://mvaude.github.io/tags/os/</link>
+    <link>https://mvaude.github.io/tags/os/</link>
     <description>Recent content in Os on Software Developer and Entrepreneur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Jun 2018 07:22:06 +0200</lastBuildDate>
     
-	<atom:link href="http://mvaude.github.io/tags/os/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mvaude.github.io/tags/os/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Unraid OS Windows 10 VM</title>
-      <link>http://mvaude.github.io/posts/unraid/</link>
+      <link>https://mvaude.github.io/posts/unraid/</link>
       <pubDate>Tue, 05 Jun 2018 07:22:06 +0200</pubDate>
       
-      <guid>http://mvaude.github.io/posts/unraid/</guid>
+      <guid>https://mvaude.github.io/posts/unraid/</guid>
       <description>A lot of the information here come from this guy.
 He makes really good videos to explain Unraid OS concepts.
 Windows 10 VMs with GPU Passthrough The purpose is to create a Windows 10 KVM VM with a dedicated GPU to have optimal performances.

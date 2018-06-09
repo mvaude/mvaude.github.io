@@ -2,83 +2,83 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Software Developer and Entrepreneur</title>
-    <link>http://mvaude.github.io/categories/</link>
+    <link>https://mvaude.github.io/categories/</link>
     <description>Recent content in Categories on Software Developer and Entrepreneur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://mvaude.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mvaude.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cheatsheet</title>
-      <link>http://mvaude.github.io/categories/cheatsheet/</link>
+      <link>https://mvaude.github.io/categories/cheatsheet/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mvaude.github.io/categories/cheatsheet/</guid>
+      <guid>https://mvaude.github.io/categories/cheatsheet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://mvaude.github.io/categories/golang/</link>
+      <link>https://mvaude.github.io/categories/golang/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mvaude.github.io/categories/golang/</guid>
+      <guid>https://mvaude.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kvm</title>
-      <link>http://mvaude.github.io/categories/kvm/</link>
+      <link>https://mvaude.github.io/categories/kvm/</link>
       <pubDate>Tue, 05 Jun 2018 07:22:06 +0200</pubDate>
       
-      <guid>http://mvaude.github.io/categories/kvm/</guid>
+      <guid>https://mvaude.github.io/categories/kvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://mvaude.github.io/categories/linux/</link>
+      <link>https://mvaude.github.io/categories/linux/</link>
       <pubDate>Tue, 05 Jun 2018 07:22:06 +0200</pubDate>
       
-      <guid>http://mvaude.github.io/categories/linux/</guid>
+      <guid>https://mvaude.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Os</title>
-      <link>http://mvaude.github.io/categories/os/</link>
+      <link>https://mvaude.github.io/categories/os/</link>
       <pubDate>Tue, 05 Jun 2018 07:22:06 +0200</pubDate>
       
-      <guid>http://mvaude.github.io/categories/os/</guid>
+      <guid>https://mvaude.github.io/categories/os/</guid>
       <description></description>
     </item>
     
     <item>
       <title>System</title>
-      <link>http://mvaude.github.io/categories/system/</link>
+      <link>https://mvaude.github.io/categories/system/</link>
       <pubDate>Tue, 05 Jun 2018 07:22:06 +0200</pubDate>
       
-      <guid>http://mvaude.github.io/categories/system/</guid>
+      <guid>https://mvaude.github.io/categories/system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>http://mvaude.github.io/categories/tools/</link>
+      <link>https://mvaude.github.io/categories/tools/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mvaude.github.io/categories/tools/</guid>
+      <guid>https://mvaude.github.io/categories/tools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
-      <link>http://mvaude.github.io/categories/web/</link>
+      <link>https://mvaude.github.io/categories/web/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mvaude.github.io/categories/web/</guid>
+      <guid>https://mvaude.github.io/categories/web/</guid>
       <description></description>
     </item>
     
