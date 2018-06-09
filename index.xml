@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>Unraid OS</title>
+      <title>Unraid OS Windows 10 VM</title>
       <link>http://mvaude.github.io/posts/unraid/</link>
       <pubDate>Tue, 05 Jun 2018 07:22:06 +0200</pubDate>
       
       <guid>http://mvaude.github.io/posts/unraid/</guid>
       <description>A lot of the information here come from this guy.
 He makes really good videos to explain Unraid OS concepts.
-VMs Configurations Windows 10 VMs with GPU Passthrough The purpose is to create a Windows 10 KVM VM with a dedicated GPU to have optimal performances.
+Windows 10 VMs with GPU Passthrough The purpose is to create a Windows 10 KVM VM with a dedicated GPU to have optimal performances.
 Stage 1: Setup the VM without any passed through hardware I. Download a copy of the latest windows 10 iso You can download the official image from here.</description>
     </item>
     
