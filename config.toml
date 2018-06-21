@@ -41,7 +41,7 @@ disable404 = true
         [[params.contact.list]]
         class = "email"
         icon = "fa-envelope"
-        url = "mailto: maxime.vaude@gmail.com"
+        url = "mailto:maxime.vaude@gmail.com"
         title = "maxime.vaude@gmail.com"
 
         [[params.contact.list]]
