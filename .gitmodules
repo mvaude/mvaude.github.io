@@ -1,0 +1,3 @@
+[submodule "themes/orbit"]
+	path = themes/orbit
+	url = https://github.com/mvaude/hugo-orbit-theme
