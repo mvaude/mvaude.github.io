@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "https://mvaude.github.io/resume"
+baseurl = "https://mvaude.github.io/resume/"
 languageCode = "en-us"
 title = "Maxime Vaude CV"
 theme = "orbit"
