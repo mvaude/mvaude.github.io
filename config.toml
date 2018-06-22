@@ -89,6 +89,21 @@ disable404 = true
         dates = "2011 - 2013"
 
         [[params.education.list]]
+        degree = "Introduction to Statistics: Descriptive Statistics"
+        college = "BerkeleyX"
+        dates = "2013"
+
+        [[params.education.list]]
+        degree = "Introduction to Computer Science and Programming Using Python"
+        college = "MITx"
+        dates = "2014"
+
+        [[params.education.list]]
+        degree = "Introduction to Linux"
+        college = "LinuxFoundationX"
+        dates = "2014"
+
+        [[params.education.list]]
         degree = "Certificat en Technologie Numérique"
         college = "42"
         dates = "2014 - 2018"
