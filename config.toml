@@ -80,6 +80,11 @@ disable404 = true
         title = "Education"
 
         [[params.education.list]]
+        degree = "Baccalauréat Scientifique"
+        college = "Institution Saint Joseph"
+        dates = "2010"
+
+        [[params.education.list]]
         college = "EPITECH"
         dates = "2010 - 2011"
 
