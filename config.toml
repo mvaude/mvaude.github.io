@@ -219,11 +219,22 @@ disable404 = true
 
     # Projects section
     [params.projects]
-        enable = false
+        enable = true
         icon = "fa-archive"
         title = "Projects"
-        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+        intro = "My main passion is to automate anything. If a computer can do something that we don't enjoy better than us, why should we bother wasting time doing it? I love to try different open source projects and add them to some architectures if I find them efficient for my needs."
 
+        [[params.projects.list]]
+	    title = "skynet"
+	    tagline = "Home Central computer managing different VMs and services to manage all different computer needs at home (NAS, Workstation with GPU Passthrough, containers services)."
+
+        [[params.projects.list]]
+	    title = "toby"
+	    tagline = "Cryptocurrencies trading and mining automator."
+
+        [[params.projects.list]]
+	    title = "azeroth"
+	    tagline = "FaaS/CaaS/PaaS architecture with CI&CD from Self-Hosted/Cloud/Hybrid infrastructre as IaC. Simply says, an auto-scaling infrastructure to automate services lifecycles."
 
     # Skills section
     [params.skills]
