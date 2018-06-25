@@ -182,6 +182,16 @@ disable404 = true
         title = "Experiences"
 
         [[params.jobs.list]]
+        position = "Freelance Software Developer"
+        dates = "2018"
+        company = "Self-employed, Paris"
+        details = """
+- automate freelance administrative tasks (accounting, reports).
+- integrate teams to develop some projects.
+- help some small companies to have an online presence with no maintenance cost.
+"""
+
+        [[params.jobs.list]]
         position = "R&D Engineer"
         dates = "2016 - 2017"
         company = "Scality, Paris"
