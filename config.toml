@@ -182,6 +182,27 @@ disable404 = true
         title = "Experiences"
 
         [[params.jobs.list]]
+        position = "R&D Engineer"
+        dates = "2016 - 2017"
+        company = "Scality, Paris"
+        details = """
+- develop a tool to dynamically patch the Node.js private dependencies (for example for end-to-end testing of a specific development branch on each dependency).
+- set up the CI (Circle CI / AWS) with definition of the different pipelines.
+- deploy serverless micro-services to manage resources and costs in the cloud (AWS) with Terraform (cloud resources watchers and killers using AWS CloudWatch, Lambda, SQS, EC2, S3).
+- make the Scality S3 connector's installer compatible with offline installations.
+- develop tools for a detailed report on the cost and use of resources in the cloud by each member or team of the organization.
+- monitor the Github activities of the organization (TICK Stack with Influx DB).
+"""
+
+        [[params.jobs.list]]
+        position = "QA Developer"
+        dates = "2016"
+        company = "Scality, Paris"
+        details = """
+- develop series of integration tests for the product's web interface (pytest, docker, selenium) with automated build in the CI.
+"""
+
+        [[params.jobs.list]]
         position = "Release Engineer"
         dates = "2015 - 2016"
         company = "Scality, Paris"
@@ -196,26 +217,6 @@ disable404 = true
 - develop a git merging robot. It includes pipelines and tells developers and reviewers where a merge block comes from and what are the missing steps to integrate the branch (ticket definition, test failure).
 """ 
 
-        [[params.jobs.list]]
-        position = "QA Developer"
-        dates = "2016"
-        company = "Scality, Paris"
-        details = """
-- develop series of integration tests for the product's web interface (pytest, docker, selenium) with automated build in the CI.
-"""
-
-        [[params.jobs.list]]
-        position = "R&D Engineer"
-        dates = "2016 - 2017"
-        company = "Scality, Paris"
-        details = """
-- develop a tool to dynamically patch the Node.js private dependencies (for example for end-to-end testing of a specific development branch on each dependency).
-- set up the CI (Circle CI / AWS) with definition of the different pipelines.
-- deploy serverless micro-services to manage resources and costs in the cloud (AWS) with Terraform (cloud resources watchers and killers using AWS CloudWatch, Lambda, SQS, EC2, S3).
-- make the Scality S3 connector's installer compatible with offline installations.
-- develop tools for a detailed report on the cost and use of resources in the cloud by each member or team of the organization.
-- monitor the Github activities of the organization (TICK Stack with Influx DB).
-"""
 
     # Projects section
     [params.projects]
@@ -225,6 +226,10 @@ disable404 = true
         intro = "My main passion is to automate anything. If a computer can do something that we don't enjoy better than us, why should we bother wasting time doing it? I love to try different open source projects and add them to some architectures if I find them efficient for my needs."
 
         [[params.projects.list]]
+	    title = "azeroth"
+	    tagline = "FaaS/CaaS/PaaS architecture with CI&CD from Self-Hosted/Cloud/Hybrid infrastructre as IaC. Simply says, an auto-scaling infrastructure to automate services lifecycles."
+
+        [[params.projects.list]]
 	    title = "skynet"
 	    tagline = "Home Central computer managing different VMs and services to manage all different computer needs at home (NAS, Workstation with GPU Passthrough, containers services)."
 
@@ -232,9 +237,40 @@ disable404 = true
 	    title = "toby"
 	    tagline = "Cryptocurrencies trading and mining automator."
 
-        [[params.projects.list]]
-	    title = "azeroth"
-	    tagline = "FaaS/CaaS/PaaS architecture with CI&CD from Self-Hosted/Cloud/Hybrid infrastructre as IaC. Simply says, an auto-scaling infrastructure to automate services lifecycles."
+
+    # Hackathons section
+    [params.hackathons]
+        enable = true
+        icon = "fa-trophy"
+        title = "Hackathons"
+
+        [[params.hacks.list]]
+            theme = "Object & Cold Storage - 3rd price"
+	    url = "https://github.com/MDHackathon"
+            dates = "2018"
+            organisator = "Scaleway, Paris"
+            details = "We developed and deployed and architecture letting you manage your data automatically with functions using openFaaS. There were a S3 self-hosted connector to manage cold storage interface. The functions just needed 2 different S3 endpoints with some policies to manipulate the data as desired."
+
+        [[params.hacks.list]]
+            theme = "S3 Connector - no contest"
+            dates = "2015"
+            organisator = "Scality, Paris"
+            details = "We were 30 students selected to develop a S3 connector with the object storage solution to do a PoC."
+
+        [[params.hacks.list]]
+            theme = "Culture Experience Days - no contest"
+	    url = "https://www.adami.fr/evenements/culture-experience-days/"
+            dates = "2015"
+            organisator = "Adami, Paris"
+            details = "The purpose were to offer, thanks to the technology, a different experience between an artist and his public. We decided to take the use case of an improvisator: we developed a connected t-shirt reflecting twitter vote from the public through different blinkings colors LED."
+
+        [[params.hacks.list]]
+            theme = "Connected Challenge - 2nd price, Pebble Price, DigitasLBi Price"
+	    url = "http://feelathome.strikingly.com/"
+            dates = "2015"
+            organisator = "Agorize, Paris"
+            details = "We decided to use all the different partners' APIs to integrate it in a smart alarm to make your life easier the morning." 
+
 
     # Skills section
     [params.skills]
