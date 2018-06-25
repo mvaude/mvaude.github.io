@@ -275,7 +275,7 @@ disable404 = true
             details = "The purpose were to offer, thanks to the technology, a different experience between an artist and his public. We decided to take the use case of an improvisator: we developed a connected t-shirt reflecting twitter vote from the public through different blinkings colors LED."
 
         [[params.hacks.list]]
-            theme = "Connected Challenge - 2nd price, Pebble Price, DigitasLBi Price"
+            theme = "Connected Challenge - 2nd price, Pebble price, DigitasLBi price"
 	    url = "http://feelathome.strikingly.com/"
             dates = "2015"
             organisator = "Agorize, Paris"
