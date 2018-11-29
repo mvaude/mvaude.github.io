@@ -27,7 +27,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.42.1" />
+    <meta name="generator" content="Hugo 0.52" />
   </head>
 
   <body>
@@ -46,10 +46,6 @@
       
       <li class="navigation-item">
         <a class="navigation-link" href="https://mvaude.github.io/about/">About</a>
-      </li>
-      
-      <li class="navigation-item">
-        <a class="navigation-link" href="https://mvaude.github.io/resume/">CV</a>
       </li>
       
     </ul>
@@ -78,6 +74,8 @@
 <h2 id="windows-10-vms-with-gpu-passthrough">Windows 10 VMs with GPU Passthrough</h2>
 
 <p>The purpose is to create a Windows 10 KVM VM with a dedicated GPU to have optimal performances.</p>
+
+<hr />
 
 <h3 id="stage-1-setup-the-vm-without-any-passed-through-hardware">Stage 1: Setup the VM without any passed through hardware</h3>
 
@@ -153,6 +151,10 @@
 
 <h5 id="v-post-install-tasks">V. Post install tasks</h5>
 
+<h6 id="setup-windows-initialization">Setup Windows Initialization</h6>
+
+<p>Setup Up Region, Keyboard Layout, Netowrk (to skip), User Settings, Cortana and Privacy Settings during the initialization.</p>
+
 <h6 id="virtio-drivers">VirtIO Drivers</h6>
 
 <p>Go to the <code>Device Manager</code>, we will see 3 devices that don&rsquo;t have a driver in <code>Other Devices</code>.</p>
@@ -164,6 +166,14 @@
 <p>Look for the location of our <code>VirtIO CDRom</code> and <code>next</code> to install the driver.</p>
 
 <p>Repeat the operation for each missing driver.</p>
+
+<h6 id="guest-agent-install">guest-agent install</h6>
+
+<p>Go to <code>virtio-win</code> drive and install <code>gpu-agent/qemu-ga-x64.msi</code>.</p>
+
+<h6 id="video-settings">Video Settings</h6>
+
+<p>We can now change the video resolution going in <code>Display Settings</code>.</p>
 
 <h6 id="softwares">Softwares</h6>
 
@@ -179,25 +189,67 @@
 
 <p>To have remote distance feature with splashtop using a free account, we just need to set a vpn router from our server to access it locally.</p>
 
+<h5 id="pimp-settings">Pimp Settings</h5>
+
+<p>We need to change some windows settings for a better VM experience.</p>
+
+<h6 id="power-options">Power Options</h6>
+
+<p>In <code>Choose what the power button does</code> disable <code>Turn on fast startup</code>.
+In <code>Choose or customize a power plan</code> click on <code>High performance</code>,
+then go to <code>Change plan settings</code> and disable <code>Hard disk/Turn off hard disk afer</code> and <code>USB settings/USB selective suspend setting/Setting</code>.
+When done, you can disable <code>Turn off the display</code> as well.</p>
+
+<h6 id="disable-indexing">Disable indexing</h6>
+
+<p>It is useful to reduce unnecessary IO on the vdisk.
+Go to <code>services.msc</code> and stop <code>Windows Search</code> service and disable it from its properties.</p>
+
+<p>Run <code>cmd</code> as administrator and enter <code>powercfg -h off</code>.
+To disable disk fragmentation, go to the local disk properties and <code>tools/optimize</code>.
+Then go to change settings and untick <code>Run on a schedule</code>.</p>
+
 <h5 id="vii-how-to-use-symlinks-to-make-efficient">VII. How to use symlinks to make efficient</h5>
 
+<p>Create a share with SMB enable.
+Map a network drive and relocate document folder.
+If you cannot find it in Windows tap your server address <code>\\[ip]\</code> in file explorer.
+Modify the related symlink (<code>Downloads</code> for example).</p>
+
 <h5 id="viii-install-a-virtual-sound-card">VIII. Install a virtual sound card</h5>
+
+<p>You need to modify the VM <code>xml</code> under the video tag at the bottom of the file:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;sound model=&#39;ich9&#39;&gt;
+&lt;/sound&gt;</pre></div>
+<hr />
 
 <h3 id="stage-2-passthrough-the-hardware-needed">Stage 2: Passthrough the hardware needed</h3>
 
 <h5 id="i-essentials-checks-before-attempting-passthrough">I. Essentials checks before attempting passthrough</h5>
 
+<h6 id="1-cpu-motherboard-must-support-iommu">1. CPU/Motherboard must support IOMMU</h6>
+
+<p>Intel&rsquo;s implementation of IOMMU is known as VT-d.
+AMD&rsquo;s implementation of IOMMU is known as AMD-Vi.</p>
+
+<h6 id="2-iommu-group">2. IOMMU group</h6>
+
+<p>Any hardware that is passed through needs to be in its own IOMMU group it can&rsquo;t share a group
+with other hardware (unless that is also going to be passed through at the same time).
+If a device is in a group with devices that we don&rsquo;t want to pass through, we need to set
+<code>Enable PCIe ACS Override</code> in <code>Settings/VM Manager</code> and reboot the system.</p>
+
 <h5 id="ii-passing-through-the-gpu">II. Passing through the GPU</h5>
 
 <h5 id="iii-passing-through-the-sound">III. Passing through the sound</h5>
 
-<h5 id="iv-passing-through-keyboard-and-other-usb-devices">IV. Passing through keyboard and other usb devices</h5>
+<h5 id="iv-fixing-demonic-sound">IV. Fixing demonic sound</h5>
 
-<h5 id="v-installing-gpu-drivers">V. Installing GPU drivers</h5>
+<h5 id="v-three-common-gpu-passthrough-problems-and-how-to-solve-them">V. Three common GPU passthrough problems and how to solve them</h5>
 
-<h5 id="vi-enabling-msi-interrupts-to-stop-sound-problems">VI. Enabling MSI interrupts to stop sound problems</h5>
+<h5 id="vi-making-non-efi-compatible-gpu-efi-compatible">VI. Making non EFI compatible GPU EFI compatible</h5>
 
-<h5 id="vii-installing-games">VII. Installing games</h5>
+<h5 id="vii-passing-through-a-usb-controller">VII. Passing through a USB controller</h5>
 
   </article>
 
@@ -205,7 +257,7 @@
 
   
       <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -239,7 +291,7 @@
     </main>
 
     
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
