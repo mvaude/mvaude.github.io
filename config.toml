@@ -11,6 +11,9 @@ disableRSS = true
 disableSitemap = true
 disable404 = true
 
+# Default language is English
+DefaultContentLanguage = "en"
+
 [params]
 
 # Meta
@@ -31,8 +34,13 @@ disable404 = true
     # Profile section
     [params.profile]
         name = "Maxime Vaude"
-        tagline = "Software Developer"
+        tagline = "Freelance Software Developer, Devops, Product Owner"
         avatar = "profile.jpg"
+
+    # Avaibility
+    [params.available]
+        enable = true
+        title = "Immediately Available"
 
     # Contact section
     [params.contact]
@@ -144,6 +152,9 @@ disable404 = true
         [[params.interests.list]]
         interest = "Traveling"
 
+        [[params.interests.list]]
+        interest = "Gastronomy"
+
 # Main body sections
 
     # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
@@ -183,7 +194,7 @@ disable404 = true
 
         [[params.jobs.list]]
         position = "Freelance Software Developer"
-        dates = "2018"
+        dates = "2019"
         company = "Self-employed, Paris"
         details = """
 - automate freelance administrative tasks (accounting, reports).
@@ -192,11 +203,23 @@ disable404 = true
 """
 
         [[params.jobs.list]]
+        position = "Devops / Product Owner"
+        dates = "2018-2019"
+        company = "Scaleway, Paris"
+        details = """
+- manage production incidents resolutions and follow-up with support teams.
+- define and plan priorities on the roadmap with the team.
+- improving developers workflow defining procedures and implementing tools.
+- continuous monitoring, alerting, configuration management on distributed architecture.
+- deployment scripting and virtualization (salt, pxe, qemu).
+"""
+
+        [[params.jobs.list]]
         position = "R&D Engineer"
         dates = "2016 - 2017"
         company = "Scality, Paris"
         details = """
-- develop a tool to dynamically patch the Node.js private dependencies (for example for end-to-end testing of a specific development branch on each dependency).
+- develop a tool to dynamically patch Node.js private dependencies (for example for end-to-end testing of a specific development branch on each dependency).
 - set up the CI (Circle CI / AWS) with definition of the different pipelines.
 - deploy serverless micro-services to manage resources and costs in the cloud (AWS) with Terraform (cloud resources watchers and killers using AWS CloudWatch, Lambda, SQS, EC2, S3).
 - make the Scality S3 connector's installer compatible with offline installations.
@@ -220,7 +243,7 @@ disable404 = true
 - migrate from svn to git.
 - define different test pipelines (development and release).
 - implement a Jenkins CI with a cloud infrastructure (Rackspace) using IaC (Infrastructure as Code).
-- set up Buildbot CI with docker workers for the static test checkers, linters, unit tests suites, due to load problems with Jenkins (with 160 parallel builds).
+- set up Buildbot CI with docker workers for the static test checkers, linters, unit tests suites.
 - Develop engineering KPIs, compute them and display them on dashboards in offices.
 - Define Release and Contribution processes based on agile methodologies (mainly SCRUM and KANBAN).
 - develop a tool to aggregate Open-Source licenses for software and system dependencies.
@@ -294,22 +317,22 @@ disable404 = true
 
         [[params.skills.list]]
         skill = "Shell"
-        level = "85%"
-
-        [[params.skills.list]]
-        skill = "Golang"
         level = "80%"
 
         [[params.skills.list]]
-        skill = "Javascript"
-        level = "70%"
-
-        [[params.skills.list]]
-        skill = "C"
-        level = "40%"
+        skill = "Golang"
+        level = "75%"
 
         [[params.skills.list]]
         skill = "Rust"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Javascript"
+        level = "50%"
+
+        [[params.skills.list]]
+        skill = "C"
         level = "20%"
 
     # Footer section
@@ -323,3 +346,232 @@ disable404 = true
 
     [params.footer]
         copyright = "Maxime Vaude"
+
+
+## French traduction section
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        weight = 1
+    [languages.fr]
+        languageCode = "fr-fr"
+        languageName = "French"
+        weight = 2
+
+        # Avaibility
+        [languages.fr.params.available]
+            enable = true
+            title = "Disponible Immédiatement"
+        [languages.fr.params.summary]
+            enable = true
+            icon = "fa-user"
+            title = "Profil"
+            summary = """
+##### Motivations:
+- Satisfaction de mes clients.
+- Goût du challenge, de la diversité en quête de perfectionnement.
+- Goût de l'échange et du contact humain.
+- Recherche d'une évolution constante.
+- Adaptabilité et optimisation des méthodologies de travail en fonction des missions et des équipes.
+- Autonomie dans le choix des technologies en ciblant l'innovation et l'efficacité.
+
+##### Domaines d'Expertise:
+- Répondre avec flexibilité et réactivité aux fluctuations d'une activité.
+- Développer des outils d'analyse de données.
+- Concevoir des solutions à base d'architecture cloud ou hybride.
+- Élaborer des solutions et des méthodologies de Release et Quality Assurance pour faire de la Continuous Integration et Continuous Delivery.
+- Apporter un regard extérieur et mettre des idées nouvelles au service d'une relation win/win.
+
+##### Ambitions/Challenges:
+- Mettre en place des solutions de cyber-sécurité dans l'entreprise et sensibiliser/éduquer ses différents acteurs.
+- Développer des Intelligences Artificielles afin d'améliorer les relations humaines et optimiser certaines intéractions.
+- Concevoir des solutions d'optimisations financières.
+"""
+
+        # Experiences section
+        [languages.fr.params.experiences]
+            enable = true
+            icon = "fa-briefcase"
+            title = "Expériences"
+
+        [[languages.fr.params.jobs.list]]
+        position = "Développeur Logiciel Freelance"
+        dates = "2019"
+        company = "Self-employed, Paris"
+        details = """
+- automatiser les tâches administratives des freelances (prospection, reporting).
+- intégrer des équipes pour développer des projets pour du prototypage ou de l'industrialisation.
+- aider de petites entreprises à améliorer leur utilisation du numérique.
+"""
+
+        [[languages.fr.params.jobs.list]]
+        position = "Devops / Product Owner"
+        dates = "2018-2019"
+        company = "Scaleway, Paris"
+        details = """
+- gérer les résolutions d'incidents de production et faire le suivi avec les équipes de support.
+- définir et planifier les priorités sur la feuille de route de l'entreprise avec l'équipe.
+- améliorer le flux de travail des développeurs en définissant des procédures et des outils de mise en œuvre.
+- surveillance continue, alertes, gestion de la configuration sur une architecture distribuée.
+- script de déploiement et virtualisation (salt, pxe, qemu).
+"""
+
+        [[languages.fr.params.jobs.list]]
+        position = "Ingénieur R&D"
+        dates = "2016 - 2017"
+        company = "Scality, Paris"
+        details = """
+- développer un outil pour corriger dynamiquement les dépendances privées de Node.js (par exemple, pour tester de bout en bout une branche de développement spécifique sur chaque dépendance).
+- mettre en place la CI (Circle CI / AWS) avec la définition des différents pipelines.
+- déployer des micro-services serverless pour gérer les ressources et les coûts dans le cloud (AWS) avec Terraform (observateurs et destructeurs de ressources dans le cloud utilisant AWS CloudWatch, Lambda, SQS, EC2, S3).
+- rendre l'installateur du connecteur Scality S3 compatible avec les installations hors ligne.
+- développer des outils pour un rapport détaillé sur le coût et l'utilisation des ressources dans le cloud par chaque membre ou équipe de l'organisation.
+- surveiller les activités Github de l'organisation pour analyser les périodes creuses (TICK Stack avec Influx DB).
+"""
+
+        [[languages.fr.params.jobs.list]]
+        position = "Développeur QA"
+        dates = "2016"
+        company = "Scality, Paris"
+        details = """
+- développer une série de tests d’intégration pour l’interface Web du produit (pytest, docker, sélénium) avec une construction automatisée dans le CI.
+"""
+
+        [[languages.fr.params.jobs.list]]
+        position = "Ingénieur de Release"
+        dates = "2015 - 2016"
+        company = "Scality, Paris"
+        details = """
+- migrer de svn à git.
+- définir différents pipelines de tests (développement et release).
+- implémenter une CI Jenkins avec une infrastructure cloud (Rackspace) utilisant IaC (Infrastructure as Code).
+- configurer une CI Buildbot avec des workers docker pour les contrôleurs de tests statiques, les linters et les suites de tests unitaires.
+- développer des rapports de KPIs d’ingénierie affichés sur des écrans dans les bureaux.
+- définir les processus de libération et de contribution basés sur des méthodologies agiles (principalement SCRUM et KANBAN).
+- développer un outil permettant d'agréger les licences Open Source pour les dépendances logicielles et système.
+- développer un robot de fusion git. Il inclut les pipelines et indique aux développeurs et aux reviewers d'où provient un bloc de fusion et quelles sont les étapes manquantes pour intégrer la branche (définition du ticket, échec du test).
+"""
+
+        # Projects section
+        [languages.fr.params.projects]
+            enable = true
+            icon = "fa-archive"
+            title = "Projets"
+            intro = "Ma principale passion est d'automatiser n'importe quoi. Pourquoi perdre du temps à faire quelque chose qu'un ordinaeur peut faire mieux que nous? J'aime essayer différents projets opensource et les ajouter à certaines architectures en fonction de leur pertinence et mes besoins."
+
+            [[languages.fr.params.projects.list]]
+	     title = "azeroth"
+	     tagline = "FaaS/CaaS/PaaS architecture avec CI&CD pour Self-Hosted/Cloud/Hybrid infrastructure en IaC. Simplement dit, une infrastructure scalable pour automatiser les cycles de vie des services."
+
+            [[languages.fr.params.projects.list]]
+	     title = "skynet"
+	     tagline = "Ordinateur central gérant différentes machines virtuelles et services pour répondre à tout les besoins informatiques dans une maison (NAS, station de travail avec GPU Passthrough, services de conteneurs)."
+
+            [[languages.fr.params.projects.list]]
+	     title = "toby"
+	     tagline = "Cryptocurrencies trading et mining automator."
+
+
+        # Hackathons section
+        [languages.fr.params.hackathons]
+            enable = true
+            icon = "fa-trophy"
+            title = "Hackathons"
+
+            [[languages.fr.params.hacks.list]]
+                theme = "Object & Cold Storage - 3ème prix"
+	            url = "https://github.com/MDHackathon"
+                dates = "2018"
+                organisator = "Scaleway, Paris"
+                details = "Nous avons développé et déployé une architecture permettant de gérer ses données automatiquement avec des fonctions utilisant openFaaS. Un connecteur S3 auto-hébergé permettait de gérer l’interface de stockage froid. Les fonctions avaient simplement besoin de 2 gateways S3 différentes avec certaines règles pour manipuler les données à volonté."
+
+            [[languages.fr.params.hacks.list]]
+                theme = "S3 Connecteur - pas de compétition"
+                dates = "2015"
+                organisator = "Scality, Paris"
+                details = "Nous étions 30 étudiants sélectionnés pour développer un connecteur S3 avec la solution de stockage d’objets pour effectuer un PoC."
+
+            [[languages.fr.params.hacks.list]]
+                theme = "Culture Experience Days - pas de compétition"
+	            url = "https://www.adami.fr/evenements/culture-experience-days/"
+                dates = "2015"
+                organisator = "Adami, Paris"
+                details = "Le but était d'offrir, grâce à la technologie, une expérience différente entre un artiste et son public. Nous avons décidé de prendre le cas d'un improvisateur: nous avons développé un t-shirt connecté reflétant les votes Twitter du public à travers différentes couleurs clignotantes LED."
+
+            [[languages.fr.params.hacks.list]]
+                theme = "Connected Challenge - 2ème prix, prix Pebble, prix DigitasLBi"
+	            url = "http://feelathome.strikingly.com/"
+                dates = "2015"
+                organisator = "Agorize, Paris"
+                details = "Nous avons décidé d'utiliser les API des différents partenaires pour l'intégrer dans une alarme intelligente afin de se simplifier la vie au réveil."
+
+        # Languages section
+        [languages.fr.params.language]
+            enable = true
+            title = "Langues"
+
+            [[languages.fr.params.language.list]]
+            language = "Français"
+            level = "Natif"
+
+            [[languages.fr.params.language.list]]
+            language = "Anglais"
+            level = "Professionnel"
+
+            [[languages.fr.params.language.list]]
+            language = "Espagnol"
+            level = "Scolaire"
+
+        # Interests section
+        [languages.fr.params.interests]
+            enable = true
+            title = "Intérêts"
+
+            [[languages.fr.params.interests.list]]
+            interest = "Cinéma"
+
+            [[languages.fr.params.interests.list]]
+            interest = "Jeux vidéo"
+
+            [[languages.fr.params.interests.list]]
+            interest = "Voyages"
+
+            [[languages.fr.params.interests.list]]
+            interest = "Gastronomie"
+
+        # Skills section
+        [languages.fr.params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Compétences Informatiques"
+
+            [[languages.fr.params.skills.list]]
+            skill = "Python"
+            level = "90%"
+
+            [[languages.fr.params.skills.list]]
+            skill = "Shell"
+            level = "80%"
+
+            [[languages.fr.params.skills.list]]
+            skill = "Golang"
+            level = "75%"
+
+            [[languages.fr.params.skills.list]]
+            skill = "Rust"
+            level = "60%"
+
+            [[languages.fr.params.skills.list]]
+            skill = "Javascript"
+            level = "50%"
+
+            [[languages.fr.params.skills.list]]
+            skill = "C"
+            level = "20%"
+
+        # Profile section
+        [languages.fr.params.profile]
+            name = "Maxime Vaude"
+            tagline = "Développeur Logiciel Freelance, Devops, Product Owner"
+            avatar = "profile.jpg"
