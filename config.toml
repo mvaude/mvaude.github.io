@@ -39,8 +39,8 @@ DefaultContentLanguage = "en"
 
     # Avaibility
     [params.available]
-        enable = true
-        title = "Immediately Available"
+        enable = false
+        title = "Unavailable"
 
     # Contact section
     [params.contact]
@@ -51,12 +51,6 @@ DefaultContentLanguage = "en"
         icon = "fa-envelope"
         url = "mailto:maxime.vaude@gmail.com"
         title = "maxime.vaude@gmail.com"
-
-        [[params.contact.list]]
-        class = "phone"
-        icon = "fa-phone"
-        url = "tel:+33699273317"
-        title = "+33 (0)6 99 27 33 17"
 
         [[params.contact.list]]
         class = "website"
@@ -193,13 +187,12 @@ DefaultContentLanguage = "en"
         title = "Experiences"
 
         [[params.jobs.list]]
-        position = "Freelance Software Developer"
+        position = "DevOps Freelancer"
         dates = "2019"
-        company = "Self-employed, Paris"
+        company = "MV Computing, Paris"
         details = """
-- automate freelance administrative tasks (accounting, reports).
-- integrate teams to develop some projects.
-- help some small companies to have an online presence with no maintenance cost.
+- automate tasks (building, testing, delivery, deployment, accounting, reports).
+- integrate teams to develop, deploy and industrialize some projects.
 """
 
         [[params.jobs.list]]
@@ -361,8 +354,8 @@ DefaultContentLanguage = "en"
 
         # Avaibility
         [languages.fr.params.available]
-            enable = true
-            title = "Disponible Immédiatement"
+            enable = false
+            title = "Indisponible"
         [languages.fr.params.summary]
             enable = true
             icon = "fa-user"
@@ -396,13 +389,12 @@ DefaultContentLanguage = "en"
             title = "Expériences"
 
         [[languages.fr.params.jobs.list]]
-        position = "Développeur Logiciel Freelance"
+        position = "DevOps/Développeur Freelance"
         dates = "2019"
-        company = "Self-employed, Paris"
+        company = "MV Computing, Paris"
         details = """
-- automatiser les tâches administratives des freelances (prospection, reporting).
-- intégrer des équipes pour développer des projets pour du prototypage ou de l'industrialisation.
-- aider de petites entreprises à améliorer leur utilisation du numérique.
+- automatiser des tâches (building, testing, delivery, deployment, reporting).
+- intégrer des équipes pour développer et deployer des projets du prototypage à l'industrialisation.
 """
 
         [[languages.fr.params.jobs.list]]
