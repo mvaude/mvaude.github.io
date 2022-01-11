@@ -34,7 +34,7 @@ DefaultContentLanguage = "en"
     # Profile section
     [params.profile]
         name = "Maxime Vaude"
-        tagline = "Freelance Software Developer, Devops, Product Owner"
+        tagline = "Freelance Cloud and Software Architect, DevSecOps"
         avatar = "profile.jpg"
 
     # Avaibility
@@ -113,7 +113,7 @@ DefaultContentLanguage = "en"
         [[params.education.list]]
         degree = "Certificat en Technologie Numérique"
         college = "42"
-        dates = "2014 - 2018"
+        dates = "2014 - 2019"
 
     # Languages section
     [params.language]
@@ -187,17 +187,30 @@ DefaultContentLanguage = "en"
         title = "Experiences"
 
         [[params.jobs.list]]
-        position = "DevOps Freelancer"
-        dates = "2019"
+        position = "Freelancer"
+        dates = "2019 - 2022"
         company = "MV Computing, Paris"
         details = """
 - automate tasks (building, testing, delivery, deployment, accounting, reports).
-- integrate teams to develop, deploy and industrialize some projects.
+- integrate teams to develop, deploy and industrialize projects.
+"""
+
+
+        [[params.jobs.list]]
+        position = "DevSecOps"
+        dates = "2019 - 2021"
+        company = "Geodis SCO, Paris"
+        details = """
+- setup and support multiple cloud environments for different projects with CI/CD (Azure, GCP, terraform).
+- manage source code repositories, librairies and versioning.
+- manage security in cloud environments (VPC, gateway, SSL, VPN Gateway).
+- manage and optimize Kubernetes clusters / Docker images.
+- share knowledge and good practices around microservices and cloud environments.
 """
 
         [[params.jobs.list]]
         position = "Devops / Product Owner"
-        dates = "2018-2019"
+        dates = "2018 - 2019"
         company = "Scaleway, Paris"
         details = """
 - manage production incidents resolutions and follow-up with support teams.
@@ -241,7 +254,7 @@ DefaultContentLanguage = "en"
 - Define Release and Contribution processes based on agile methodologies (mainly SCRUM and KANBAN).
 - develop a tool to aggregate Open-Source licenses for software and system dependencies.
 - develop a git merging robot. It includes pipelines and tells developers and reviewers where a merge block comes from and what are the missing steps to integrate the branch (ticket definition, test failure).
-""" 
+"""
 
 
     # Projects section
@@ -295,7 +308,7 @@ DefaultContentLanguage = "en"
 	    url = "http://feelathome.strikingly.com/"
             dates = "2015"
             organisator = "Agorize, Paris"
-            details = "We decided to use all the different partners' APIs to integrate it in a smart alarm to make your life easier the morning." 
+            details = "We decided to use all the different partners' APIs to integrate it in a smart alarm to make your life easier the morning."
 
 
     # Skills section
@@ -305,11 +318,15 @@ DefaultContentLanguage = "en"
         title = "Skills & Proficiency"
 
         [[params.skills.list]]
-        skill = "Python"
+        skill = "Typescript"
         level = "90%"
 
         [[params.skills.list]]
         skill = "Shell"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Python"
         level = "80%"
 
         [[params.skills.list]]
@@ -321,21 +338,10 @@ DefaultContentLanguage = "en"
         level = "60%"
 
         [[params.skills.list]]
-        skill = "Javascript"
-        level = "50%"
-
-        [[params.skills.list]]
         skill = "C"
         level = "20%"
 
     # Footer section
-
-    # The original template is released under the Creative Commons Attribution 3.0 License.
-    # Please keep the original attribution link when using for your own project.
-    # If you'd like to use the template without the attribution,
-    # you can check out other license options via template author's website: themes.3rdwavemedia.com
-    # 
-    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
 
     [params.footer]
         copyright = "Maxime Vaude"
@@ -389,12 +395,24 @@ DefaultContentLanguage = "en"
             title = "Expériences"
 
         [[languages.fr.params.jobs.list]]
-        position = "DevOps/Développeur Freelance"
-        dates = "2019"
+        position = "Freelance"
+        dates = "2019 - 2022"
         company = "MV Computing, Paris"
         details = """
 - automatiser des tâches (building, testing, delivery, deployment, reporting).
 - intégrer des équipes pour développer et deployer des projets du prototypage à l'industrialisation.
+"""
+
+        [[languages.fr.params.jobs.list]]
+        position = "DevSecOps"
+        dates = "2019 - 2021"
+        company = "MV Computing, Paris"
+        details = """
+- créer et déployer différents environements cloud pour différents projets avec CI/CD (Azure, GCP, terraform).
+- manager les répertoires de source code, les librairies et le versioning.
+- maintenir la sécurité des environements cloud (VPC, gateway, SSL, VPN Gateway).
+- créer, maintenir et optimiser des clusters Kubernetes / Docker images.
+- partager des connaissances et bonnes pratiques autour des architectures microservices et des environements cloud.
 """
 
         [[languages.fr.params.jobs.list]]
@@ -424,7 +442,7 @@ DefaultContentLanguage = "en"
 
         [[languages.fr.params.jobs.list]]
         position = "Développeur QA"
-        dates = "2016"
+        dates = "2016 - 2016"
         company = "Scality, Paris"
         details = """
 - développer une série de tests d’intégration pour l’interface Web du produit (pytest, docker, sélénium) avec une construction automatisée dans le CI.
@@ -539,11 +557,15 @@ DefaultContentLanguage = "en"
         title = "Compétences Informatiques"
 
             [[languages.fr.params.skills.list]]
-            skill = "Python"
+            skill = "Typescript"
             level = "90%"
 
             [[languages.fr.params.skills.list]]
             skill = "Shell"
+            level = "90%"
+
+            [[languages.fr.params.skills.list]]
+            skill = "Python"
             level = "80%"
 
             [[languages.fr.params.skills.list]]
@@ -553,10 +575,6 @@ DefaultContentLanguage = "en"
             [[languages.fr.params.skills.list]]
             skill = "Rust"
             level = "60%"
-
-            [[languages.fr.params.skills.list]]
-            skill = "Javascript"
-            level = "50%"
 
             [[languages.fr.params.skills.list]]
             skill = "C"
