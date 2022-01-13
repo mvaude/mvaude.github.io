@@ -34,13 +34,13 @@ DefaultContentLanguage = "en"
     # Profile section
     [params.profile]
         name = "Maxime Vaude"
-        tagline = "DevSecOps"
+        tagline = "Freelancer DevSecOps"
         avatar = "profile.jpg"
 
     # Avaibility
     [params.available]
-        enable = false
-        title = "Unavailable"
+        enable = true
+        title = "Available"
 
     # Contact section
     [params.contact]
@@ -315,7 +315,7 @@ DefaultContentLanguage = "en"
     [params.skills]
         enable = true
         icon = "fa-rocket"
-        title = "Skills & Proficiency"
+        title = "Programming Languages"
 
         [[params.skills.list]]
         skill = "Typescript"
@@ -360,8 +360,8 @@ DefaultContentLanguage = "en"
 
         # Avaibility
         [languages.fr.params.available]
-            enable = false
-            title = "Indisponible"
+            enable = true
+            title = "Disponible"
         [languages.fr.params.summary]
             enable = true
             icon = "fa-user"
@@ -554,7 +554,7 @@ DefaultContentLanguage = "en"
         [languages.fr.params.skills]
         enable = true
         icon = "fa-rocket"
-        title = "Compétences Informatiques"
+        title = "Languages de Programmation"
 
             [[languages.fr.params.skills.list]]
             skill = "Typescript"
@@ -583,5 +583,5 @@ DefaultContentLanguage = "en"
         # Profile section
         [languages.fr.params.profile]
             name = "Maxime Vaude"
-            tagline = "DevSecOps"
+            tagline = "DevSecOps Freelance"
             avatar = "profile.jpg"
