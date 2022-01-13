@@ -34,7 +34,7 @@ DefaultContentLanguage = "en"
     # Profile section
     [params.profile]
         name = "Maxime Vaude"
-        tagline = "Freelance Cloud and Software Architect, DevSecOps"
+        tagline = "DevSecOps"
         avatar = "profile.jpg"
 
     # Avaibility
@@ -583,5 +583,5 @@ DefaultContentLanguage = "en"
         # Profile section
         [languages.fr.params.profile]
             name = "Maxime Vaude"
-            tagline = "Développeur Logiciel Freelance, Devops, Product Owner"
+            tagline = "DevSecOps"
             avatar = "profile.jpg"
