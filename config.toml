@@ -406,7 +406,7 @@ DefaultContentLanguage = "en"
         [[languages.fr.params.jobs.list]]
         position = "DevSecOps"
         dates = "2019 - 2021"
-        company = "MV Computing, Paris"
+        company = "Geodis SCO, Paris"
         details = """
 - créer et déployer différents environements cloud pour différents projets avec CI/CD (Azure, GCP, terraform).
 - manager les répertoires de source code, les librairies et le versioning.
