@@ -204,6 +204,8 @@ DefaultContentLanguage = "en"
 **Context**:
 
 Integrate teams (between 5-15 people) on different projects:
+- Last Mile Delivery Service. A microservices architecture with a web application for support and mobile applications for drivers.
+- Package Tracker and Visualizer. A microservices architecture with a webapp to track in real time packages around the world for a customer.
 
 **Tasks**:
 - setup and support multiple cloud environments for different projects with CI/CD (Azure, GCP, terraform).
@@ -224,7 +226,7 @@ GCP (GKE, PubSubs, Firebase, VPC, VPN Gateway, Endpoints, Container Native Load 
         details = """
 **Context**:
 
-
+Integrate Storage Team (5 people) and work on S3 service and maintenance.
 
 **Tasks**:
 - manage production incidents resolutions and follow-up with support teams.
@@ -245,6 +247,9 @@ MinIO, OpenIO, Redis, SQLite, Salt, Golang, PXE, QEMU, HAProxy, ELK, Prometheus,
         company = "Scality, Paris"
         details = """
 **Context**:
+
+Integrate R&D team (5 people in Paris and 5 people in San Francisco) and implement End to End test suites for the S3 connector as a step in CI pipeline.
+Create a service to reduce cloud costs in AWS.
 
 **Tasks**:
 - develop a tool to dynamically patch Node.js private dependencies (for example for end-to-end testing of a specific development branch on each dependency).
@@ -267,7 +272,7 @@ AWS (EC2, EBS, VPC, S3, CloudWatch, SQS, Lambda), Python, Pytest, NodeJS, Circle
         details = """
 **Context**:
 
-
+Write End to End test suites.
 
 **Tasks**:
 - develop series of integration tests for the product's web interface (pytest, docker, selenium) with automated build in the CI.
@@ -284,6 +289,8 @@ Python, Pytest, Selenium, Flask, Docker, Salt.
         company = "Scality, Paris"
         details = """
 **Context**:
+
+integrate a release team (10 people) and work on CI/CD pipelines definition and tools to improve devlopper workflow.
 
 **Tasks**:
 - migrate from svn to git.
