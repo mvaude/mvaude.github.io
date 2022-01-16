@@ -192,7 +192,7 @@ DefaultContentLanguage = "en"
         company = "MV Computing, Paris"
         details = """
 - automate tasks (building, testing, delivery, deployment, accounting, reports).
-- integrate agile teams to develop, deploy and industrialize projects.
+- integrate agile teams to develop, deploy and industrialize projects following "devops" culture.
 """
 
 
@@ -201,12 +201,6 @@ DefaultContentLanguage = "en"
         dates = "2019 - 2021"
         company = "Geodis SCO, Paris"
         details = """
-**Context**:
-
-Integrate teams (between 5-15 people) on different projects:
-- Last Mile Delivery Service. A microservices architecture with a web application for support and mobile applications for drivers.
-- Package Tracker and Visualizer. A microservices architecture with a webapp to track in real time packages around the world for a customer.
-
 **Tasks**:
 - setup and support multiple cloud environments for different projects with CI/CD (Azure, GCP, terraform).
 - manage source code repositories, librairies and versioning.
@@ -214,9 +208,9 @@ Integrate teams (between 5-15 people) on different projects:
 - manage and optimize Kubernetes clusters / Docker images.
 - share knowledge and good practices around microservices and cloud environments.
 
-**Technologies**:
+**Tech Stack**:
 
-GCP (GKE, PubSubs, Firebase, VPC, VPN Gateway, Endpoints, Container Native Load Balancer), Azure (Pipelines, AKS, Event Grid, Application Gateway, VPC, Blob Storage, Cosmos DB), Kubernetes, Docker, Packer, Nginx, S3 Protocol, Elasticsearch, Redis, MongoDB, MySQL, Terraform, Ansible, Gitlab CI, OpenAPI, Typescript, NodeJS, iOS (Swift), Android (Kotlin), Git.
+GCP (GKE, PubSub, Firebase, VPC, VPN Gateway, Endpoints, Container Native Load Balancer), Azure (Pipelines, AKS, Event Grid, Application Gateway, VPC, Blob Storage, Cosmos DB), Kubernetes, Docker, Packer, Nginx, S3 Protocol, Elasticsearch, Redis, MongoDB, MySQL, Terraform, Ansible, Gitlab CI, OpenAPI, Typescript, NodeJS, iOS (Swift), Android (Kotlin), Git, Linux (Alpine, Ubuntu).
 """
 
         [[params.jobs.list]]
@@ -224,10 +218,6 @@ GCP (GKE, PubSubs, Firebase, VPC, VPN Gateway, Endpoints, Container Native Load 
         dates = "2018 - 2019"
         company = "Scaleway, Paris"
         details = """
-**Context**:
-
-Integrate Storage Team (5 people) and work on S3 service and maintenance.
-
 **Tasks**:
 - manage production incidents resolutions and follow-up with support teams.
 - define and plan priorities on the roadmap with the team.
@@ -235,10 +225,9 @@ Integrate Storage Team (5 people) and work on S3 service and maintenance.
 - continuous monitoring, alerting, configuration management on distributed architecture.
 - deployment scripting and virtualization (salt, pxe, qemu).
 
-**Technologies**:
+**Tech Stack**:
 
-MinIO, OpenIO, Redis, SQLite, Salt, Golang, PXE, QEMU, HAProxy, ELK, Prometheus, Grafana, Jira API, Docker, Packer, Git.
-
+Zenko, MinIO, OpenIO, Redis, SQLite, Salt, Golang, PXE, QEMU, HAProxy, ELK, Prometheus, Grafana, Jira API, Docker, Packer, Git, Linux (Ubuntu, Debian).
 """
 
         [[params.jobs.list]]
@@ -246,11 +235,6 @@ MinIO, OpenIO, Redis, SQLite, Salt, Golang, PXE, QEMU, HAProxy, ELK, Prometheus,
         dates = "2016 - 2017"
         company = "Scality, Paris"
         details = """
-**Context**:
-
-Integrate R&D team (5 people in Paris and 5 people in San Francisco) and implement End to End test suites for the S3 connector as a step in CI pipeline.
-Create a service to reduce cloud costs in AWS.
-
 **Tasks**:
 - develop a tool to dynamically patch Node.js private dependencies (for example for end-to-end testing of a specific development branch on each dependency).
 - set up the CI (Circle CI / AWS) with definition of the different pipelines.
@@ -259,10 +243,9 @@ Create a service to reduce cloud costs in AWS.
 - develop tools for a detailed report on the cost and use of resources in the cloud by each member or team of the organization.
 - monitor the Github activities of the organization (TICK Stack with Influx DB).
 
-**Technologies**:
+**Tech Stack**:
 
-AWS (EC2, EBS, VPC, S3, CloudWatch, SQS, Lambda), Python, Pytest, NodeJS, Circle CI, InfluxDB, Grafana, Ansible, Docker, Git, Zenko.
-
+AWS (EC2, EBS, VPC, S3, CloudWatch, SQS, Lambda), Python, Pytest, NodeJS, Circle CI, InfluxDB, Grafana, Ansible, Docker, Git, Zenko, Linux (CentOS, Ubuntu).
 """
 
         [[params.jobs.list]]
@@ -270,17 +253,12 @@ AWS (EC2, EBS, VPC, S3, CloudWatch, SQS, Lambda), Python, Pytest, NodeJS, Circle
         dates = "2016"
         company = "Scality, Paris"
         details = """
-**Context**:
-
-Write End to End test suites.
-
 **Tasks**:
 - develop series of integration tests for the product's web interface (pytest, docker, selenium) with automated build in the CI.
 
-**Technologies**:
+**Tech Stack**:
 
-Python, Pytest, Selenium, Flask, Docker, Salt.
-
+Python, Pytest, Selenium, Flask, Docker, Salt, Linux (CentOS, Ubuntu).
 """
 
         [[params.jobs.list]]
@@ -288,10 +266,6 @@ Python, Pytest, Selenium, Flask, Docker, Salt.
         dates = "2015 - 2016"
         company = "Scality, Paris"
         details = """
-**Context**:
-
-integrate a release team (10 people) and work on CI/CD pipelines definition and tools to improve devlopper workflow.
-
 **Tasks**:
 - migrate from svn to git.
 - define different test pipelines (development and release).
@@ -302,10 +276,9 @@ integrate a release team (10 people) and work on CI/CD pipelines definition and 
 - develop a tool to aggregate Open-Source licenses for software and system dependencies.
 - develop a git merging robot. It includes pipelines and tells developers and reviewers where a merge block comes from and what are the missing steps to integrate the branch (ticket definition, test failure).
 
-**Technologies**:
+**Tech Stack**:
 
-Python, Jenkins, Artifactory, Jira, Git.
-
+Python, Jenkins, Artifactory, Jira, Git, Linux (CentOS, Ubuntu).
 """
 
 
@@ -465,6 +438,10 @@ Python, Jenkins, Artifactory, Jira, Git.
 - maintenir la sécurité des environements cloud (VPC, gateway, SSL, VPN Gateway).
 - créer, maintenir et optimiser des clusters Kubernetes / Docker images.
 - partager des connaissances et bonnes pratiques autour des architectures microservices et des environements cloud.
+
+**Stack Technologique**:
+
+GCP (GKE, PubSub, Firebase, VPC, VPN Gateway, Endpoints, Container Native Load Balancer), Azure (Pipelines, AKS, Event Grid, Application Gateway, VPC, Blob Storage, Cosmos DB), Kubernetes, Docker, Packer, Nginx, S3 Protocol, Elasticsearch, Redis, MongoDB, MySQL, Terraform, Ansible, Gitlab CI, OpenAPI, Typescript, NodeJS, iOS (Swift), Android (Kotlin), Git, Linux (Alpine, Ubuntu).
 """
 
         [[languages.fr.params.jobs.list]]
@@ -477,6 +454,10 @@ Python, Jenkins, Artifactory, Jira, Git.
 - améliorer le flux de travail des développeurs en définissant des procédures et des outils de mise en œuvre.
 - surveillance continue, alertes, gestion de la configuration sur une architecture distribuée.
 - script de déploiement et virtualisation (salt, pxe, qemu).
+
+**Stack Technologique**:
+
+Zenko, MinIO, OpenIO, Redis, SQLite, Salt, Golang, PXE, QEMU, HAProxy, ELK, Prometheus, Grafana, Jira API, Docker, Packer, Git, Linux (Ubuntu, Debian).
 """
 
         [[languages.fr.params.jobs.list]]
@@ -490,6 +471,10 @@ Python, Jenkins, Artifactory, Jira, Git.
 - rendre l'installateur du connecteur Scality S3 compatible avec les installations hors ligne.
 - développer des outils pour un rapport détaillé sur le coût et l'utilisation des ressources dans le cloud par chaque membre ou équipe de l'organisation.
 - surveiller les activités Github de l'organisation pour analyser les périodes creuses (TICK Stack avec Influx DB).
+
+**Stack Technologique**:
+
+AWS (EC2, EBS, VPC, S3, CloudWatch, SQS, Lambda), Python, Pytest, NodeJS, Circle CI, InfluxDB, Grafana, Ansible, Docker, Git, Zenko, Linux (CentOS, Ubuntu).
 """
 
         [[languages.fr.params.jobs.list]]
@@ -498,6 +483,10 @@ Python, Jenkins, Artifactory, Jira, Git.
         company = "Scality, Paris"
         details = """
 - développer une série de tests d’intégration pour l’interface Web du produit (pytest, docker, sélénium) avec une construction automatisée dans le CI.
+
+**Stack Technologique**:
+
+Python, Pytest, Selenium, Flask, Docker, Salt, Linux (CentOS, Ubuntu).
 """
 
         [[languages.fr.params.jobs.list]]
@@ -513,6 +502,10 @@ Python, Jenkins, Artifactory, Jira, Git.
 - définir les processus de libération et de contribution basés sur des méthodologies agiles (principalement SCRUM et KANBAN).
 - développer un outil permettant d'agréger les licences Open Source pour les dépendances logicielles et système.
 - développer un robot de fusion git. Il inclut les pipelines et indique aux développeurs et aux reviewers d'où provient un bloc de fusion et quelles sont les étapes manquantes pour intégrer la branche (définition du ticket, échec du test).
+
+**Stack Technologique**:
+
+Python, Jenkins, Artifactory, Jira, Git, Linux (CentOS, Ubuntu).
 """
 
         # Projects section
