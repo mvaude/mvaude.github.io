@@ -192,7 +192,7 @@ DefaultContentLanguage = "en"
         company = "MV Computing, Paris"
         details = """
 - automate tasks (building, testing, delivery, deployment, accounting, reports).
-- integrate teams to develop, deploy and industrialize projects.
+- integrate agile teams to develop, deploy and industrialize projects.
 """
 
 
@@ -201,11 +201,20 @@ DefaultContentLanguage = "en"
         dates = "2019 - 2021"
         company = "Geodis SCO, Paris"
         details = """
+**Context**:
+
+Integrate teams (between 5-15 people) on different projects:
+
+**Tasks**:
 - setup and support multiple cloud environments for different projects with CI/CD (Azure, GCP, terraform).
 - manage source code repositories, librairies and versioning.
 - manage security in cloud environments (VPC, gateway, SSL, VPN Gateway).
 - manage and optimize Kubernetes clusters / Docker images.
 - share knowledge and good practices around microservices and cloud environments.
+
+**Technologies**:
+
+GCP (GKE, PubSubs, Firebase, VPC, VPN Gateway, Endpoints, Container Native Load Balancer), Azure (Pipelines, AKS, Event Grid, Application Gateway, VPC, Blob Storage, Cosmos DB), Kubernetes, Docker, Packer, Nginx, S3 Protocol, Elasticsearch, Redis, MongoDB, MySQL, Terraform, Ansible, Gitlab CI, OpenAPI, Typescript, NodeJS, iOS (Swift), Android (Kotlin), Git.
 """
 
         [[params.jobs.list]]
@@ -213,11 +222,21 @@ DefaultContentLanguage = "en"
         dates = "2018 - 2019"
         company = "Scaleway, Paris"
         details = """
+**Context**:
+
+
+
+**Tasks**:
 - manage production incidents resolutions and follow-up with support teams.
 - define and plan priorities on the roadmap with the team.
 - improving developers workflow defining procedures and implementing tools.
 - continuous monitoring, alerting, configuration management on distributed architecture.
 - deployment scripting and virtualization (salt, pxe, qemu).
+
+**Technologies**:
+
+MinIO, OpenIO, Redis, SQLite, Salt, Golang, PXE, QEMU, HAProxy, ELK, Prometheus, Grafana, Jira API, Docker, Packer, Git.
+
 """
 
         [[params.jobs.list]]
@@ -225,12 +244,20 @@ DefaultContentLanguage = "en"
         dates = "2016 - 2017"
         company = "Scality, Paris"
         details = """
+**Context**:
+
+**Tasks**:
 - develop a tool to dynamically patch Node.js private dependencies (for example for end-to-end testing of a specific development branch on each dependency).
 - set up the CI (Circle CI / AWS) with definition of the different pipelines.
 - deploy serverless micro-services to manage resources and costs in the cloud (AWS) with Terraform (cloud resources watchers and killers using AWS CloudWatch, Lambda, SQS, EC2, S3).
 - make the Scality S3 connector's installer compatible with offline installations.
 - develop tools for a detailed report on the cost and use of resources in the cloud by each member or team of the organization.
 - monitor the Github activities of the organization (TICK Stack with Influx DB).
+
+**Technologies**:
+
+AWS (EC2, EBS, VPC, S3, CloudWatch, SQS, Lambda), Python, Pytest, NodeJS, Circle CI, InfluxDB, Grafana, Ansible, Docker, Git, Zenko.
+
 """
 
         [[params.jobs.list]]
@@ -238,7 +265,17 @@ DefaultContentLanguage = "en"
         dates = "2016"
         company = "Scality, Paris"
         details = """
+**Context**:
+
+
+
+**Tasks**:
 - develop series of integration tests for the product's web interface (pytest, docker, selenium) with automated build in the CI.
+
+**Technologies**:
+
+Python, Pytest, Selenium, Flask, Docker, Salt.
+
 """
 
         [[params.jobs.list]]
@@ -246,6 +283,9 @@ DefaultContentLanguage = "en"
         dates = "2015 - 2016"
         company = "Scality, Paris"
         details = """
+**Context**:
+
+**Tasks**:
 - migrate from svn to git.
 - define different test pipelines (development and release).
 - implement a Jenkins CI with a cloud infrastructure (Rackspace) using IaC (Infrastructure as Code).
@@ -254,6 +294,11 @@ DefaultContentLanguage = "en"
 - Define Release and Contribution processes based on agile methodologies (mainly SCRUM and KANBAN).
 - develop a tool to aggregate Open-Source licenses for software and system dependencies.
 - develop a git merging robot. It includes pipelines and tells developers and reviewers where a merge block comes from and what are the missing steps to integrate the branch (ticket definition, test failure).
+
+**Technologies**:
+
+Python, Jenkins, Artifactory, Jira, Git.
+
 """
 
 
