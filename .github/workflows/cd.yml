@@ -1,0 +1,26 @@
+name: test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: install system dependencies
+        run: sudo apt-get install -y --no-install-recommends protobuf-compiler
+      - name: install python dependencies
+        run: pip3 install -r requirements.txt
+      - name: install node dependencies
+        run: npm install -g rollup wasm-pack
+      - name: build sources
+        run: make all
+      - name: generate pdf
+        run: make pdf
