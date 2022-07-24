@@ -1,0 +1,398 @@
+name: Maxime Vaude
+source_code: github.com/mvaude.github.io
+host_link: mvaude.github.io
+email: mv.computing@gmail.com
+location: &paris
+  city: Paris
+  state: IDF
+  country: France
+linkedin_profile: maxime-vaude-8b22465a
+github_profile: mvaude
+about_me:
+  - description: Lead DevSecOps, Tech Leader.
+  - description: Lifelong learner interested in automation and problem solving.
+  - description: I am equally comfortable designing a high performance complete solution, or optimize and harden solutions already in place.
+  - description: Voracious reader. Gamer. Epicurean. Entrepreneur.
+education:
+  - institution: "42"
+    major: Certificat en Technologie Numérique
+    description:
+    period:
+      start: "2014-09-01T00:00:00Z"
+      end: "2019-09-01T00:00:00Z"
+    degree: MASTERS
+    location: *paris
+  - institution: MITx
+    major: Introduction to Computer Science and Programming Using Python
+    description:
+    period:
+      start: "2014-12-20T00:00:00Z"
+      end: "2014-12-20T00:00:00Z"
+    degree: MOOC
+    location: &edx
+      city: edX
+      state: Online
+  - institution: LinuxFoundationX
+    major: Introduction to Linux
+    description:
+    period:
+      start: "2014-08-15T00:00:00Z"
+      end: "2014-08-15T00:00:00Z"
+    degree: MOOC
+    location: *edx
+  - institution: BerkleyX
+    major: Introduction to Statistics - Descriptive Statistics
+    description:
+    period:
+      start: "2013-04-01T00:00:00Z"
+      end: "2013-04-30T00:00:00Z"
+    degree: MOOC
+    location: *edx
+  - institution: IDRAC Business School
+    major: Programme Grandes Ecoles de Commerce
+    description:
+    period:
+      start: "2011-09-01T00:00:00Z"
+      end: "2013-06-01T00:00:00Z"
+    degree: MASTERS
+    location: &lyon
+      city: Lyon
+      state: Rhone
+      country: France
+  - institution: EPITECH
+    major: Programme Grande Ecole
+    description:
+    period:
+      start: "2010-09-01T00:00:00Z"
+      end: "2011-06-01T00:00:00Z"
+    degree: MASTERS
+    location: *lyon
+  - institution: Institution Saint-Joseph
+    major: Scientific
+    description:
+    period:
+      start: "2007-09-01T00:00:00Z"
+      end: "2010-06-01T00:00:00Z"
+    degree: Baccalaureat
+    location:
+      city: Tassin
+      state: Rhone
+      country: France
+experience:
+  - title: DevSecOps Freelancer
+    organization: MV Computing
+    website: https://mvaude.github.io/
+    period:
+      start: "2019-09-10T00:00:00Z"
+    location: *paris
+    duty:
+      - description: automate tasks (building, testing, delivery, deployment, accounting, reports).
+        tags:
+          [Github Actions, Python, Shell, Node.js, Packer, Docker, Kubernetes]
+      - description: collaborate with agile teams to deploy and industrialize projects following "devops" culture.
+        tags: [Golang, Rust, Helm, Kubernetes, Node.js, Github Actions]
+      - description: Member of team responsible for the overall cloud footprint with the goal of optimizing for reliability, security, responsiveness, and situational awareness.
+        tags:
+          [
+            EC2,
+            ECR,
+            S3,
+            IAM,
+            Terraform,
+            Prometheus,
+            Grafana,
+            Datadog,
+            CloudFormation,
+            Elasticsearch,
+            Kibana,
+          ]
+      - description: Design CI-CD systems to improve efficiency and reliability of code deployment.
+        tags:
+          [
+            Github Actions,
+            Gitlab CI,
+            Helm,
+            Kubernetes,
+            Docker,
+            Make,
+            Terraform,
+            Python,
+            Shell,
+          ]
+  - title: Lead DevSecOps
+    organization: Silvr
+    website: https://en.silvr.co/
+    period:
+      start: "2022-02-01T00:00:00Z"
+      end: "2022-06-30T00:00:00Z"
+    location: *paris
+    duty:
+      - description: Transform and harden current cloud infrastructure as IaC.
+        tags: [Terraform, Github Actions, tfsec, BigQuery, Composer]
+      - description: optimize CI/CD on web and data projects.
+        tags: [Github Actions, Terraform, Helm]
+      - description: Implement tools for security certifications.
+        tags: [tfsec, Python, Terraform, GCP IAM]
+      - description: Discuss with teams to optimize developer workflows and harden security.
+        tags: [Django, Airflow, Docker, Kubernetes]
+      - description: Hire and guide a team of talented devops professionals.
+        tags: [Python, Github Actions, Airflow, GCP IAM]
+  - title: DevSecOps
+    organization: Geodis SCO
+    website: https://info.sco.geodis.com/
+    period:
+      start: "2019-10-01T00:00:00Z"
+      end: "2021-11-30T00:00:00Z"
+    location: *paris
+    duty:
+      - description: Setup and support multiple cloud environments for different projects with CI/CD.
+        tags: [Gitlab CI, Terraform, Node.js, Python, Shell, Azure DevOps]
+      - description: Manage source code repositories, librairies and versioning.
+        tags: [Node.js, TypeScript, React]
+      - description: Manage security in cloud environments.
+        tags:
+          [
+            GCP VPC,
+            Azure VPC,
+            Let's Encrypt,
+            MongoDB,
+            Firebase,
+            Cosmos DB,
+            Cloud Functions,
+            Azure Functions,
+          ]
+      - description: Manage and optimize Kubernetes clusters / Docker images.
+        tags: [Kubernetes, Docker, Packer, Docker]
+      - description: Share knowledge and good practices around microservices and cloud environments.
+        tags:
+          [Hugo, Git, Cloud Functions, Node.js, TypeScript, React, Cosmos DB]
+  - title: DevOps / Product Owner
+    organization: Scaleway
+    website: https://www.scaleway.com/en/
+    period:
+      start: "2018-07-01T00:00:00Z"
+      end: "2019-06-30T00:00:00Z"
+    location: *paris
+    duty:
+      - description: manage production incidents resolutions and follow-up with support teams.
+        tags: []
+      - description: define and plan priorities on the roadmap with the team.
+        tags: []
+      - description: improving developers workflow defining procedures and implementing tools.
+        tags: []
+      - description: continuous monitoring, alerting, configuration management on distributed architecture.
+        tags: []
+      - description: deployment scripting and virtualization (salt, pxe, qemu).
+        tags: [Salt, PXE, QEMU, Python, Shell]
+  - title: R&D Engineer
+    organization: Scality
+    website: https://www.scality.com/
+    period:
+      start: "2016-12-01T00:00:00Z"
+      end: "2018-03-30T00:00:00Z"
+    location: *paris
+    duty:
+      - description: develop a tool to dynamically patch Node.js private dependencies for dynamic e2e testing.
+        tags: []
+      - description: set up the CI (Circle CI / AWS) with definition of the different pipelines for R&D department.
+        tags: []
+      - description: deploy serverless micro-services to manage resources and costs in the cloud.
+        tags:
+          [Python, boto3, CloudWatch, Lambda, SQS, EC2, S3, Terraform, DynamoDB]
+      - description: make the Scality S3 connector's installer compatible with offline installations.
+        tags: [Ansible, CentOS/RHEL, Debian/Ubuntu, Docker, Python]
+      - description: develop tools for a detailed report on the cost and cloud resources usage for each member or team of the organization.
+        tags: []
+      - description: monitor Github activities of the organization.
+        tags: [InfluxDB, Golang]
+      - description: develop integration test suites for the web interface (pytest, docker, selenium) with automated build in the CI.
+        tags:
+          [
+            Python,
+            Pytest,
+            Selenium,
+            Flask,
+            Docker,
+            Salt,
+            CentOS/RHEL,
+            Debian/Ubuntu,
+          ]
+  - title: Release Engineer
+    organization: Scality
+    website: https://www.scality.com/
+    period:
+      start: "2015-09-01T00:00:00Z"
+      end: "2016-12-01T00:00:00Z"
+    location: *paris
+    duty:
+      - description: migrate from svn to git.
+        tags: [Python, SVN, Git, GitPython]
+      - description: implement CI with a cloud infrastructure using IaC (Infrastructure as Code).
+        tags:
+          [
+            Jenkins,
+            Rackspace,
+            Python,
+            Artifactory,
+            Jira,
+            Git,
+            CentOS/RHEL,
+            Debian/Ubuntu,
+          ]
+      - description: set up CI with docker workers for the static test checkers, linters, unit tests suites.
+        tags: [Buildbot, Python, Flake8, Pylint]
+      - description: Develop engineering KPIs computing and a webapp to display them on dashboards in offices.
+        tags: [Three.js, Python, Node.js]
+      - description: Define Release and Contribution processes based on agile methodologies (mainly SCRUM and KANBAN).
+        tags: []
+      - description: develop a tool to aggregate Open-Source licenses for software and system dependencies.
+        tags: []
+      - description: develop a git merging robot helper.
+        tags: [Python, GitPython, Git, Jira, Jenkins, Rackspace]
+        demo: https://github.com/scality/bert-e
+
+skills:
+  - category: GCP
+    tags:
+      - AI Platform
+      - AppEngine
+      - BigQuery
+      - Bigtable
+      - Cloud Dataflow
+      - Cloud Functions
+      - Cloud Run
+      - Composer
+      - Firebase
+      - GCE
+      - GCS
+      - GKE
+      - GCP IAM
+      - IAP
+      - KMS
+      - GCP VPC
+      - Endpoint
+      - VPN Gateway
+  - category: AWS
+    tags:
+      - EC2
+      - ECR
+      - EKS
+      - CloudFormation
+      - DynamoDB
+      - IAM
+      - KMS
+      - Lambda
+      - RDS
+      - S3
+      - AWS VPC
+      - SQS
+      - CloudWatch
+  - category: Azure
+    tags:
+      - AKS
+      - Azure Functions
+      - Cosmos DB
+      - Azure SQL
+      - Blob Storage
+      - Container Registry
+      - Azure DevOps
+      - Pipelines
+      - Event Grid
+      - Azure VPC
+  - category: General Programming
+    tags:
+      - Golang
+      - Rust
+      - Python
+      - Node.js
+      - Shell
+      - C
+  - category: Javascript
+    tags:
+      - TypeScript
+      - Angular
+      - React
+      - Three.js
+      - Selenium
+  - category: Rust
+    tags:
+      - Serde
+      - bindgen
+      - wasm-bindgen
+  - category: Golang
+    tags:
+      - CDK
+      - Hugo
+  - category: Python
+    tags:
+      - NumPy
+      - asyncio
+      - Flask
+      - boto3
+      - Pytest
+      - Pylint
+      - Flake8
+      - GitPython
+      - Django
+  - category: DevOps
+    tags:
+      - Docker
+      - Kubernetes
+      - Grafana
+      - Helm
+      - Terraform
+      - Packer
+      - Vault
+      - Consul
+      - Jenkins
+      - Datadog
+      - AMP
+      - Git
+      - SVN
+      - Kafka
+      - Serverless
+      - Airflow
+      - Gradle
+      - Make
+      - Gitlab CI
+      - Github Actions
+      - Jenkins
+      - Buildbot
+      - Ansible
+      - Salt
+      - Bazel
+      - Kibana
+      - tfsec
+      - Let's Encrypt
+      - PXE
+      - QEMU
+  - category: Database
+    tags:
+      - MS SQL Server
+      - Bigtable
+      - Firebase
+      - BigQuery
+      - MySQL
+      - Postgres
+      - Redis
+      - MongoDB
+      - Elasticsearch
+      - Prometheus
+      - InfluxDB
+  - category: Linux
+    tags:
+      - Debian/Ubuntu
+      - CentOS/RHEL
+      - Fedora
+      - Arch
+      - NixOS
+      - Kali
+      - Tails
+  - category: Other
+    tags:
+      - Scrum Master
+      - Rackspace
+      - Jira
+      - Artifactory
+      - Neovim
+      - VSCode

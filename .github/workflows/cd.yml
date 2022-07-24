@@ -1,0 +1,65 @@
+name: test
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+env:
+  CARGO_TERM_COLOR: always
+
+# Allow one concurrent deployment
+concurrency:
+  group: "cd"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: arduino/setup-protoc@v1
+        with:
+          version: "3.x"
+      - name: install python dependencies
+        run: pip3 install -r requirements.txt
+      - name: install node dependencies
+        run: npm install -g rollup wasm-pack
+      - name: build sources
+        run: make all
+      - name: generate pdf
+        run: |
+          make pdf
+          cp MaximeVaude-Resume.pdf dist/
+      - uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: MaximeVaude-Resume.pdf
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: ./dist
+  deploy:
+    needs: build
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
