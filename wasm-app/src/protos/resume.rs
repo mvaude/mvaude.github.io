@@ -31,15 +31,14 @@ pub struct Resume {
     pub email: ::std::string::String,
     pub source_code: ::std::string::String,
     pub host_link: ::std::string::String,
+    pub phone_number: ::protobuf::SingularPtrField<PhoneNumber>,
+    pub location: ::protobuf::SingularPtrField<Location>,
     pub linkedin_profile: ::std::string::String,
     pub github_profile: ::std::string::String,
     pub about_me: ::protobuf::RepeatedField<AboutMe>,
     pub education: ::protobuf::RepeatedField<Education>,
     pub experience: ::protobuf::RepeatedField<Experience>,
     pub skills: ::protobuf::RepeatedField<SkillCategory>,
-    // message oneof groups
-    pub _phone_number: ::std::option::Option<Resume_oneof__phone_number>,
-    pub _location: ::std::option::Option<Resume_oneof__location>,
     // special fields
     #[cfg_attr(feature = "with-serde", serde(skip))]
     pub unknown_fields: ::protobuf::UnknownFields,
@@ -51,18 +50,6 @@ impl<'a> ::std::default::Default for &'a Resume {
     fn default() -> &'a Resume {
         <Resume as ::protobuf::Message>::default_instance()
     }
-}
-
-#[derive(Clone,PartialEq,Debug)]
-#[cfg_attr(feature = "with-serde", derive(::serde::Serialize, ::serde::Deserialize))]
-pub enum Resume_oneof__phone_number {
-    phone_number(PhoneNumber),
-}
-
-#[derive(Clone,PartialEq,Debug)]
-#[cfg_attr(feature = "with-serde", derive(::serde::Serialize, ::serde::Deserialize))]
-pub enum Resume_oneof__location {
-    location(Location),
 }
 
 impl Resume {
@@ -178,98 +165,66 @@ impl Resume {
 
 
     pub fn get_phone_number(&self) -> &PhoneNumber {
-        match self._phone_number {
-            ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(ref v)) => v,
-            _ => <PhoneNumber as ::protobuf::Message>::default_instance(),
-        }
+        self.phone_number.as_ref().unwrap_or_else(|| <PhoneNumber as ::protobuf::Message>::default_instance())
     }
     pub fn clear_phone_number(&mut self) {
-        self._phone_number = ::std::option::Option::None;
+        self.phone_number.clear();
     }
 
     pub fn has_phone_number(&self) -> bool {
-        match self._phone_number {
-            ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(..)) => true,
-            _ => false,
-        }
+        self.phone_number.is_some()
     }
 
     // Param is passed by value, moved
     pub fn set_phone_number(&mut self, v: PhoneNumber) {
-        self._phone_number = ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(v))
+        self.phone_number = ::protobuf::SingularPtrField::some(v);
     }
 
     // Mutable pointer to the field.
+    // If field is not initialized, it is initialized with default value first.
     pub fn mut_phone_number(&mut self) -> &mut PhoneNumber {
-        if let ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(_)) = self._phone_number {
-        } else {
-            self._phone_number = ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(PhoneNumber::new()));
+        if self.phone_number.is_none() {
+            self.phone_number.set_default();
         }
-        match self._phone_number {
-            ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(ref mut v)) => v,
-            _ => panic!(),
-        }
+        self.phone_number.as_mut().unwrap()
     }
 
     // Take field
     pub fn take_phone_number(&mut self) -> PhoneNumber {
-        if self.has_phone_number() {
-            match self._phone_number.take() {
-                ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            PhoneNumber::new()
-        }
+        self.phone_number.take().unwrap_or_else(|| PhoneNumber::new())
     }
 
     // .Location location = 6;
 
 
     pub fn get_location(&self) -> &Location {
-        match self._location {
-            ::std::option::Option::Some(Resume_oneof__location::location(ref v)) => v,
-            _ => <Location as ::protobuf::Message>::default_instance(),
-        }
+        self.location.as_ref().unwrap_or_else(|| <Location as ::protobuf::Message>::default_instance())
     }
     pub fn clear_location(&mut self) {
-        self._location = ::std::option::Option::None;
+        self.location.clear();
     }
 
     pub fn has_location(&self) -> bool {
-        match self._location {
-            ::std::option::Option::Some(Resume_oneof__location::location(..)) => true,
-            _ => false,
-        }
+        self.location.is_some()
     }
 
     // Param is passed by value, moved
     pub fn set_location(&mut self, v: Location) {
-        self._location = ::std::option::Option::Some(Resume_oneof__location::location(v))
+        self.location = ::protobuf::SingularPtrField::some(v);
     }
 
     // Mutable pointer to the field.
+    // If field is not initialized, it is initialized with default value first.
     pub fn mut_location(&mut self) -> &mut Location {
-        if let ::std::option::Option::Some(Resume_oneof__location::location(_)) = self._location {
-        } else {
-            self._location = ::std::option::Option::Some(Resume_oneof__location::location(Location::new()));
+        if self.location.is_none() {
+            self.location.set_default();
         }
-        match self._location {
-            ::std::option::Option::Some(Resume_oneof__location::location(ref mut v)) => v,
-            _ => panic!(),
-        }
+        self.location.as_mut().unwrap()
     }
 
     // Take field
     pub fn take_location(&mut self) -> Location {
-        if self.has_location() {
-            match self._location.take() {
-                ::std::option::Option::Some(Resume_oneof__location::location(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            Location::new()
-        }
+        self.location.take().unwrap_or_else(|| Location::new())
     }
 
     // string linkedin_profile = 7;
@@ -427,16 +382,16 @@ impl Resume {
 
 impl ::protobuf::Message for Resume {
     fn is_initialized(&self) -> bool {
-        if let Some(Resume_oneof__phone_number::phone_number(ref v)) = self._phone_number {
+        for v in &self.phone_number {
             if !v.is_initialized() {
                 return false;
             }
-        }
-        if let Some(Resume_oneof__location::location(ref v)) = self._location {
+        };
+        for v in &self.location {
             if !v.is_initialized() {
                 return false;
             }
-        }
+        };
         for v in &self.about_me {
             if !v.is_initialized() {
                 return false;
@@ -477,16 +432,10 @@ impl ::protobuf::Message for Resume {
                     ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.host_link)?;
                 },
                 5 => {
-                    if wire_type != ::protobuf::wire_format::WireTypeLengthDelimited {
-                        return ::std::result::Result::Err(::protobuf::rt::unexpected_wire_type(wire_type));
-                    }
-                    self._phone_number = ::std::option::Option::Some(Resume_oneof__phone_number::phone_number(is.read_message()?));
+                    ::protobuf::rt::read_singular_message_into(wire_type, is, &mut self.phone_number)?;
                 },
                 6 => {
-                    if wire_type != ::protobuf::wire_format::WireTypeLengthDelimited {
-                        return ::std::result::Result::Err(::protobuf::rt::unexpected_wire_type(wire_type));
-                    }
-                    self._location = ::std::option::Option::Some(Resume_oneof__location::location(is.read_message()?));
+                    ::protobuf::rt::read_singular_message_into(wire_type, is, &mut self.location)?;
                 },
                 7 => {
                     ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.linkedin_profile)?;
@@ -530,6 +479,14 @@ impl ::protobuf::Message for Resume {
         if !self.host_link.is_empty() {
             my_size += ::protobuf::rt::string_size(4, &self.host_link);
         }
+        if let Some(ref v) = self.phone_number.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint32_size(len) + len;
+        }
+        if let Some(ref v) = self.location.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint32_size(len) + len;
+        }
         if !self.linkedin_profile.is_empty() {
             my_size += ::protobuf::rt::string_size(7, &self.linkedin_profile);
         }
@@ -552,22 +509,6 @@ impl ::protobuf::Message for Resume {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint32_size(len) + len;
         };
-        if let ::std::option::Option::Some(ref v) = self._phone_number {
-            match v {
-                &Resume_oneof__phone_number::phone_number(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint32_size(len) + len;
-                },
-            };
-        }
-        if let ::std::option::Option::Some(ref v) = self._location {
-            match v {
-                &Resume_oneof__location::location(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint32_size(len) + len;
-                },
-            };
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.get_unknown_fields());
         self.cached_size.set(my_size);
         my_size
@@ -585,6 +526,16 @@ impl ::protobuf::Message for Resume {
         }
         if !self.host_link.is_empty() {
             os.write_string(4, &self.host_link)?;
+        }
+        if let Some(ref v) = self.phone_number.as_ref() {
+            os.write_tag(5, ::protobuf::wire_format::WireTypeLengthDelimited)?;
+            os.write_raw_varint32(v.get_cached_size())?;
+            v.write_to_with_cached_sizes(os)?;
+        }
+        if let Some(ref v) = self.location.as_ref() {
+            os.write_tag(6, ::protobuf::wire_format::WireTypeLengthDelimited)?;
+            os.write_raw_varint32(v.get_cached_size())?;
+            v.write_to_with_cached_sizes(os)?;
         }
         if !self.linkedin_profile.is_empty() {
             os.write_string(7, &self.linkedin_profile)?;
@@ -612,24 +563,6 @@ impl ::protobuf::Message for Resume {
             os.write_raw_varint32(v.get_cached_size())?;
             v.write_to_with_cached_sizes(os)?;
         };
-        if let ::std::option::Option::Some(ref v) = self._phone_number {
-            match v {
-                &Resume_oneof__phone_number::phone_number(ref v) => {
-                    os.write_tag(5, ::protobuf::wire_format::WireTypeLengthDelimited)?;
-                    os.write_raw_varint32(v.get_cached_size())?;
-                    v.write_to_with_cached_sizes(os)?;
-                },
-            };
-        }
-        if let ::std::option::Option::Some(ref v) = self._location {
-            match v {
-                &Resume_oneof__location::location(ref v) => {
-                    os.write_tag(6, ::protobuf::wire_format::WireTypeLengthDelimited)?;
-                    os.write_raw_varint32(v.get_cached_size())?;
-                    v.write_to_with_cached_sizes(os)?;
-                },
-            };
-        }
         os.write_unknown_fields(self.get_unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -688,15 +621,15 @@ impl ::protobuf::Message for Resume {
                 |m: &Resume| { &m.host_link },
                 |m: &mut Resume| { &mut m.host_link },
             ));
-            fields.push(::protobuf::reflect::accessor::make_singular_message_accessor::<_, PhoneNumber>(
+            fields.push(::protobuf::reflect::accessor::make_singular_ptr_field_accessor::<_, ::protobuf::types::ProtobufTypeMessage<PhoneNumber>>(
                 "phone_number",
-                Resume::has_phone_number,
-                Resume::get_phone_number,
+                |m: &Resume| { &m.phone_number },
+                |m: &mut Resume| { &mut m.phone_number },
             ));
-            fields.push(::protobuf::reflect::accessor::make_singular_message_accessor::<_, Location>(
+            fields.push(::protobuf::reflect::accessor::make_singular_ptr_field_accessor::<_, ::protobuf::types::ProtobufTypeMessage<Location>>(
                 "location",
-                Resume::has_location,
-                Resume::get_location,
+                |m: &Resume| { &m.location },
+                |m: &mut Resume| { &mut m.location },
             ));
             fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<_, ::protobuf::types::ProtobufTypeString>(
                 "linkedin_profile",
@@ -748,8 +681,8 @@ impl ::protobuf::Clear for Resume {
         self.email.clear();
         self.source_code.clear();
         self.host_link.clear();
-        self._phone_number = ::std::option::Option::None;
-        self._location = ::std::option::Option::None;
+        self.phone_number.clear();
+        self.location.clear();
         self.linkedin_profile.clear();
         self.github_profile.clear();
         self.about_me.clear();
@@ -1129,9 +1062,8 @@ impl ::protobuf::reflect::ProtobufValue for PhoneNumber {
 pub struct Location {
     // message fields
     pub city: ::std::string::String,
+    pub state: ::std::string::String,
     pub country: ::std::string::String,
-    // message oneof groups
-    pub _state: ::std::option::Option<Location_oneof__state>,
     // special fields
     #[cfg_attr(feature = "with-serde", serde(skip))]
     pub unknown_fields: ::protobuf::UnknownFields,
@@ -1143,12 +1075,6 @@ impl<'a> ::std::default::Default for &'a Location {
     fn default() -> &'a Location {
         <Location as ::protobuf::Message>::default_instance()
     }
-}
-
-#[derive(Clone,PartialEq,Debug)]
-#[cfg_attr(feature = "with-serde", derive(::serde::Serialize, ::serde::Deserialize))]
-pub enum Location_oneof__state {
-    state(::std::string::String),
 }
 
 impl Location {
@@ -1186,49 +1112,26 @@ impl Location {
 
 
     pub fn get_state(&self) -> &str {
-        match self._state {
-            ::std::option::Option::Some(Location_oneof__state::state(ref v)) => v,
-            _ => "",
-        }
+        &self.state
     }
     pub fn clear_state(&mut self) {
-        self._state = ::std::option::Option::None;
-    }
-
-    pub fn has_state(&self) -> bool {
-        match self._state {
-            ::std::option::Option::Some(Location_oneof__state::state(..)) => true,
-            _ => false,
-        }
+        self.state.clear();
     }
 
     // Param is passed by value, moved
     pub fn set_state(&mut self, v: ::std::string::String) {
-        self._state = ::std::option::Option::Some(Location_oneof__state::state(v))
+        self.state = v;
     }
 
     // Mutable pointer to the field.
+    // If field is not initialized, it is initialized with default value first.
     pub fn mut_state(&mut self) -> &mut ::std::string::String {
-        if let ::std::option::Option::Some(Location_oneof__state::state(_)) = self._state {
-        } else {
-            self._state = ::std::option::Option::Some(Location_oneof__state::state(::std::string::String::new()));
-        }
-        match self._state {
-            ::std::option::Option::Some(Location_oneof__state::state(ref mut v)) => v,
-            _ => panic!(),
-        }
+        &mut self.state
     }
 
     // Take field
     pub fn take_state(&mut self) -> ::std::string::String {
-        if self.has_state() {
-            match self._state.take() {
-                ::std::option::Option::Some(Location_oneof__state::state(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            ::std::string::String::new()
-        }
+        ::std::mem::replace(&mut self.state, ::std::string::String::new())
     }
 
     // string country = 3;
@@ -1271,10 +1174,7 @@ impl ::protobuf::Message for Location {
                     ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.city)?;
                 },
                 2 => {
-                    if wire_type != ::protobuf::wire_format::WireTypeLengthDelimited {
-                        return ::std::result::Result::Err(::protobuf::rt::unexpected_wire_type(wire_type));
-                    }
-                    self._state = ::std::option::Option::Some(Location_oneof__state::state(is.read_string()?));
+                    ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.state)?;
                 },
                 3 => {
                     ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.country)?;
@@ -1294,15 +1194,11 @@ impl ::protobuf::Message for Location {
         if !self.city.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.city);
         }
+        if !self.state.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.state);
+        }
         if !self.country.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.country);
-        }
-        if let ::std::option::Option::Some(ref v) = self._state {
-            match v {
-                &Location_oneof__state::state(ref v) => {
-                    my_size += ::protobuf::rt::string_size(2, &v);
-                },
-            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.get_unknown_fields());
         self.cached_size.set(my_size);
@@ -1313,15 +1209,11 @@ impl ::protobuf::Message for Location {
         if !self.city.is_empty() {
             os.write_string(1, &self.city)?;
         }
+        if !self.state.is_empty() {
+            os.write_string(2, &self.state)?;
+        }
         if !self.country.is_empty() {
             os.write_string(3, &self.country)?;
-        }
-        if let ::std::option::Option::Some(ref v) = self._state {
-            match v {
-                &Location_oneof__state::state(ref v) => {
-                    os.write_string(2, v)?;
-                },
-            };
         }
         os.write_unknown_fields(self.get_unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -1366,10 +1258,10 @@ impl ::protobuf::Message for Location {
                 |m: &Location| { &m.city },
                 |m: &mut Location| { &mut m.city },
             ));
-            fields.push(::protobuf::reflect::accessor::make_singular_string_accessor::<_>(
+            fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<_, ::protobuf::types::ProtobufTypeString>(
                 "state",
-                Location::has_state,
-                Location::get_state,
+                |m: &Location| { &m.state },
+                |m: &mut Location| { &mut m.state },
             ));
             fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<_, ::protobuf::types::ProtobufTypeString>(
                 "country",
@@ -1393,7 +1285,7 @@ impl ::protobuf::Message for Location {
 impl ::protobuf::Clear for Location {
     fn clear(&mut self) {
         self.city.clear();
-        self._state = ::std::option::Option::None;
+        self.state.clear();
         self.country.clear();
         self.unknown_fields.clear();
     }
@@ -2951,43 +2843,42 @@ impl ::protobuf::reflect::ProtobufValue for SkillCategory {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0cresume.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\xe6\x03\n\
+    \n\x0cresume.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\xbe\x03\n\
     \x06Resume\x12\x12\n\x04name\x18\x01\x20\x01(\tR\x04name\x12\x14\n\x05em\
     ail\x18\x02\x20\x01(\tR\x05email\x12\x1f\n\x0bsource_code\x18\x03\x20\
     \x01(\tR\nsourceCode\x12\x1b\n\thost_link\x18\x04\x20\x01(\tR\x08hostLin\
-    k\x124\n\x0cphone_number\x18\x05\x20\x01(\x0b2\x0c.PhoneNumberH\0R\x0bph\
-    oneNumber\x88\x01\x01\x12*\n\x08location\x18\x06\x20\x01(\x0b2\t.Locatio\
-    nH\x01R\x08location\x88\x01\x01\x12)\n\x10linkedin_profile\x18\x07\x20\
-    \x01(\tR\x0flinkedinProfile\x12%\n\x0egithub_profile\x18\x08\x20\x01(\tR\
-    \rgithubProfile\x12#\n\x08about_me\x18\t\x20\x03(\x0b2\x08.AboutMeR\x07a\
-    boutMe\x12(\n\teducation\x18\n\x20\x03(\x0b2\n.EducationR\teducation\x12\
-    +\n\nexperience\x18\x0b\x20\x03(\x0b2\x0b.ExperienceR\nexperience\x12&\n\
-    \x06skills\x18\x0c\x20\x03(\x0b2\x0e.SkillCategoryR\x06skillsB\x0f\n\r_p\
-    hone_numberB\x0b\n\t_location\"+\n\x07AboutMe\x12\x20\n\x0bdescription\
-    \x18\x01\x20\x01(\tR\x0bdescription\"H\n\x0bPhoneNumber\x12!\n\x0ccountr\
-    y_code\x18\x01\x20\x01(\rR\x0bcountryCode\x12\x16\n\x06number\x18\x02\
-    \x20\x01(\x04R\x06number\"]\n\x08Location\x12\x12\n\x04city\x18\x01\x20\
-    \x01(\tR\x04city\x12\x19\n\x05state\x18\x02\x20\x01(\tH\0R\x05state\x88\
-    \x01\x01\x12\x18\n\x07country\x18\x03\x20\x01(\tR\x07countryB\x08\n\x06_\
-    state\"k\n\tDateRange\x120\n\x05start\x18\x01\x20\x01(\x0b2\x1a.google.p\
-    rotobuf.TimestampR\x05start\x12,\n\x03end\x18\x02\x20\x01(\x0b2\x1a.goog\
-    le.protobuf.TimestampR\x03end\"\x9d\x02\n\tEducation\x12\x20\n\x0binstit\
-    ution\x18\x01\x20\x01(\tR\x0binstitution\x12\x14\n\x05major\x18\x02\x20\
-    \x01(\tR\x05major\x12\x20\n\x0bdescription\x18\x03\x20\x01(\tR\x0bdescri\
-    ption\x12\"\n\x06period\x18\x04\x20\x01(\x0b2\n.DateRangeR\x06period\x12\
-    )\n\x06degree\x18\x05\x20\x01(\x0e2\x11.Education.DegreeR\x06degree\x12%\
-    \n\x08location\x18\x06\x20\x01(\x0b2\t.LocationR\x08location\"@\n\x06Deg\
-    ree\x12\x10\n\x0cBaccalaureat\x10\0\x12\r\n\tBACHELORS\x10\x01\x12\x0b\n\
-    \x07MASTERS\x10\x02\x12\x08\n\x04MOOC\x10\x03\"\xc6\x01\n\nExperience\
-    \x12\x14\n\x05title\x18\x01\x20\x01(\tR\x05title\x12\"\n\x0corganization\
-    \x18\x02\x20\x01(\tR\x0corganization\x12\x18\n\x07website\x18\x03\x20\
-    \x01(\tR\x07website\x12\"\n\x06period\x18\x04\x20\x01(\x0b2\n.DateRangeR\
-    \x06period\x12%\n\x08location\x18\x05\x20\x01(\x0b2\t.LocationR\x08locat\
-    ion\x12\x19\n\x04duty\x18\x06\x20\x03(\x0b2\x05.DutyR\x04duty\"P\n\x04Du\
-    ty\x12\x20\n\x0bdescription\x18\x01\x20\x01(\tR\x0bdescription\x12\x12\n\
-    \x04tags\x18\x02\x20\x03(\tR\x04tags\x12\x12\n\x04demo\x18\x03\x20\x01(\
-    \tR\x04demo\"?\n\rSkillCategory\x12\x1a\n\x08category\x18\x01\x20\x01(\t\
-    R\x08category\x12\x12\n\x04tags\x18\x02\x20\x03(\tR\x04tagsb\x06proto3\
+    k\x12/\n\x0cphone_number\x18\x05\x20\x01(\x0b2\x0c.PhoneNumberR\x0bphone\
+    Number\x12%\n\x08location\x18\x06\x20\x01(\x0b2\t.LocationR\x08location\
+    \x12)\n\x10linkedin_profile\x18\x07\x20\x01(\tR\x0flinkedinProfile\x12%\
+    \n\x0egithub_profile\x18\x08\x20\x01(\tR\rgithubProfile\x12#\n\x08about_\
+    me\x18\t\x20\x03(\x0b2\x08.AboutMeR\x07aboutMe\x12(\n\teducation\x18\n\
+    \x20\x03(\x0b2\n.EducationR\teducation\x12+\n\nexperience\x18\x0b\x20\
+    \x03(\x0b2\x0b.ExperienceR\nexperience\x12&\n\x06skills\x18\x0c\x20\x03(\
+    \x0b2\x0e.SkillCategoryR\x06skills\"+\n\x07AboutMe\x12\x20\n\x0bdescript\
+    ion\x18\x01\x20\x01(\tR\x0bdescription\"H\n\x0bPhoneNumber\x12!\n\x0ccou\
+    ntry_code\x18\x01\x20\x01(\rR\x0bcountryCode\x12\x16\n\x06number\x18\x02\
+    \x20\x01(\x04R\x06number\"N\n\x08Location\x12\x12\n\x04city\x18\x01\x20\
+    \x01(\tR\x04city\x12\x14\n\x05state\x18\x02\x20\x01(\tR\x05state\x12\x18\
+    \n\x07country\x18\x03\x20\x01(\tR\x07country\"k\n\tDateRange\x120\n\x05s\
+    tart\x18\x01\x20\x01(\x0b2\x1a.google.protobuf.TimestampR\x05start\x12,\
+    \n\x03end\x18\x02\x20\x01(\x0b2\x1a.google.protobuf.TimestampR\x03end\"\
+    \x9d\x02\n\tEducation\x12\x20\n\x0binstitution\x18\x01\x20\x01(\tR\x0bin\
+    stitution\x12\x14\n\x05major\x18\x02\x20\x01(\tR\x05major\x12\x20\n\x0bd\
+    escription\x18\x03\x20\x01(\tR\x0bdescription\x12\"\n\x06period\x18\x04\
+    \x20\x01(\x0b2\n.DateRangeR\x06period\x12)\n\x06degree\x18\x05\x20\x01(\
+    \x0e2\x11.Education.DegreeR\x06degree\x12%\n\x08location\x18\x06\x20\x01\
+    (\x0b2\t.LocationR\x08location\"@\n\x06Degree\x12\x10\n\x0cBaccalaureat\
+    \x10\0\x12\r\n\tBACHELORS\x10\x01\x12\x0b\n\x07MASTERS\x10\x02\x12\x08\n\
+    \x04MOOC\x10\x03\"\xc6\x01\n\nExperience\x12\x14\n\x05title\x18\x01\x20\
+    \x01(\tR\x05title\x12\"\n\x0corganization\x18\x02\x20\x01(\tR\x0corganiz\
+    ation\x12\x18\n\x07website\x18\x03\x20\x01(\tR\x07website\x12\"\n\x06per\
+    iod\x18\x04\x20\x01(\x0b2\n.DateRangeR\x06period\x12%\n\x08location\x18\
+    \x05\x20\x01(\x0b2\t.LocationR\x08location\x12\x19\n\x04duty\x18\x06\x20\
+    \x03(\x0b2\x05.DutyR\x04duty\"P\n\x04Duty\x12\x20\n\x0bdescription\x18\
+    \x01\x20\x01(\tR\x0bdescription\x12\x12\n\x04tags\x18\x02\x20\x03(\tR\
+    \x04tags\x12\x12\n\x04demo\x18\x03\x20\x01(\tR\x04demo\"?\n\rSkillCatego\
+    ry\x12\x1a\n\x08category\x18\x01\x20\x01(\tR\x08category\x12\x12\n\x04ta\
+    gs\x18\x02\x20\x03(\tR\x04tagsb\x06proto3\
 ";
 
 static file_descriptor_proto_lazy: ::protobuf::rt::LazyV2<::protobuf::descriptor::FileDescriptorProto> = ::protobuf::rt::LazyV2::INIT;

@@ -1,5 +1,5 @@
 
-Maxime Vaudemv.computing@gmail.comgithub.com/mvaude/resume"mvaude.github.io2
+Maxime Vaudemv.computing@gmail.comgithub.com/mvaude/resume"mvaude.github.io/resume2
 ParisIDFFrance:maxime-vaude-8b22465aBmvaudeJ
 Lead DevSecOps, Tech Leader.J@
 >Lifelong learner interested in automation and problem solving.J}
@@ -66,9 +66,9 @@ Imanage production incidents resolutions and follow-up with support teams.2:
 8define and plan priorities on the roadmap with the team.2K
 Iimproving developers workflow defining procedures and implementing tools.2X
 Vcontinuous monitoring, alerting, configuration management on distributed architecture.2\
-:deployment scripting and virtualization (salt, pxe, qemu).SaltPXEQEMUPythonShellZ˜
+:deployment scripting and virtualization (salt, pxe, qemu).SaltPXEQEMUPythonShellZ∑
 R&D EngineerScalityhttps://www.scality.com/"
-Äç°√Ä¸ı’*
+Ä–˝¡Ä¸ı’*
 ParisIDFFrance2[
 Ydevelop a tool to dynamically patch Node.js private dependencies for dynamic e2e testing.2`
 ^set up the CI (Circle CI / AWS) with definition of the different pipelines for R&D department.2î
@@ -76,13 +76,10 @@ Ldeploy serverless micro-services to manage resources and costs in the cloud.P
 CloudWatchLambdaSQSEC2S3	TerraformDynamoDB2á
 Pmake the Scality S3 connector's installer compatible with offline installations.AnsibleCentOS/RHELDebian/UbuntuDockerPython2x
 vdevelop tools for a detailed report on the cost and cloud resources usage for each member or team of the organization.2B
-.monitor Github activities of the organization.InfluxDBGolangZô
-QA DeveloperScalityhttps://www.scality.com/"
-ÄﬂùæÄ«ñ√*
-ParisIDFFrance2Ω
+.monitor Github activities of the organization.InfluxDBGolang2Ω
 pdevelop integration test suites for the web interface (pytest, docker, selenium) with automated build in the CI.PythonPytestSeleniumFlaskDockerSaltCentOS/RHELDebian/UbuntuZÁ
 Release EngineerScalityhttps://www.scality.com/"
-Ä’ìØÄﬂùæ*
+Ä’ìØÄ–˝¡*
 ParisIDFFrance27
 migrate from svn to git.PythonSVNGit	GitPython2û
 Limplement CI with a cloud infrastructure using IaC (Infrastructure as Code).Jenkins	RackspacePythonArtifactoryJiraGitCentOS/RHELDebian/Ubuntu2{
