@@ -1,4 +1,4 @@
-.PHONY: help python rust build wasm all pdf
+.PHONY: help python rust build wasm all pdf python-ci ci
 help:
 	@echo "Resume as Code"
 	@echo "========================"
@@ -28,4 +28,4 @@ serve:  ## Serve the `wasm-app` directory on port 8080
 deploy: python rust build wasm pdf
 	cp ./wasm-app/pkg/wasm* ../craftycoder.com/static/cv/pkg
 	cp ./wasm-app/pkg/bundle.js ../craftycoder.com/static/cv/pkg
-	cp ./Maxime-Vaude-Resume.pdf ../craftycoder.com/static/cv
+	cp ./MaximeVaude-Resume.pdf ../craftycoder.com/static/cv

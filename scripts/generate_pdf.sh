@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -eux
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
-cd "$DIR"
-
 if [[ "$OSTYPE" == "darwin"* ]]; then
     shopt -s expand_aliases
     chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
@@ -31,23 +28,21 @@ cp -r wasm-app/pkg/ dist/pkg/
 
 rm -rf "$OUTFILE"
 
-cd dist/
-python3 -m http.server 8081 &
-PID=$!
-cd ..
+docker build -t cv-server:latest -f Dockerfile-server .
+docker run --rm -d --name cv -p 8080:8080 cv-server
 
-sleep 1
+sleep 2
 
 {
     google-chrome-stable --headless --disable-gpu \
         --run-all-compositor-stages-before-draw \
-        --virtual-time-budget=10000 \
+        --virtual-time-budget=20000 \
         --print-to-pdf="$OUTFILE" \
-        http://localhost:8081
+        http://127.0.0.1:8080
 
 } || {
     printf ""
 }
 
-kill "$PID"
-rm -rf dist/
+docker logs cv
+docker rm -f cv
