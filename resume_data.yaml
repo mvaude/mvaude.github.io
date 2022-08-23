@@ -1,6 +1,6 @@
 name: Maxime Vaude
 source_code: github.com/mvaude/resume
-host_link: mvaude.github.io
+host_link: mvaude.github.io/resume
 email: mv.computing@gmail.com
 location: &paris
   city: Paris
@@ -87,7 +87,8 @@ experience:
     location: *paris
     duty:
       - description: automate tasks (building, testing, delivery, deployment, accounting, reports).
-        tags: [Github Actions, Python, Shell, Node.js, Packer, Docker, Kubernetes,]
+        tags:
+          [Github Actions, Python, Shell, Node.js, Packer, Docker, Kubernetes]
       - description: collaborate with agile teams to deploy and industrialize projects following "devops" culture.
         tags: [Golang, Rust, Helm, Kubernetes, Node.js, Github Actions]
       - description: Member of team responsible for the overall cloud footprint with the goal of optimizing for reliability, security, responsiveness, and situational awareness.
@@ -129,7 +130,7 @@ experience:
       - description: Transform and harden current cloud infrastructure as IaC.
         tags: [Terraform, Github Actions, tfsec, BigQuery, Composer]
       - description: optimize CI/CD on web and data projects.
-        tags: [Github Actions, Terraform, Helm, ]
+        tags: [Github Actions, Terraform, Helm]
       - description: Implement tools for security certifications.
         tags: [tfsec, Python, Terraform, GCP IAM]
       - description: Discuss with teams to optimize developer workflows and harden security.
@@ -149,11 +150,22 @@ experience:
       - description: Manage source code repositories, librairies and versioning.
         tags: [Node.js, TypeScript, React]
       - description: Manage security in cloud environments.
-        tags: [GCP VPC, Azure VPC, Let's Encrypt, MongoDB, Firebase, Cosmos DB, Cloud Functions, Azure Functions]
+        tags:
+          [
+            GCP VPC,
+            Azure VPC,
+            Let's Encrypt,
+            MongoDB,
+            Firebase,
+            Cosmos DB,
+            Cloud Functions,
+            Azure Functions,
+          ]
       - description: Manage and optimize Kubernetes clusters / Docker images.
-        tags: [Kubernetes, Docker, Packer, Docker,]
+        tags: [Kubernetes, Docker, Packer, Docker]
       - description: Share knowledge and good practices around microservices and cloud environments.
-        tags: [Hugo, Git, Cloud Functions, Node.js, TypeScript, React, Cosmos DB]
+        tags:
+          [Hugo, Git, Cloud Functions, Node.js, TypeScript, React, Cosmos DB]
   - title: DevOps / Product Owner
     organization: Scaleway
     website: https://www.scaleway.com/en/
@@ -176,7 +188,7 @@ experience:
     organization: Scality
     website: https://www.scality.com/
     period:
-      start: "2017-01-01T00:00:00Z"
+      start: "2016-12-01T00:00:00Z"
       end: "2018-03-30T00:00:00Z"
     location: *paris
     duty:
@@ -185,21 +197,14 @@ experience:
       - description: set up the CI (Circle CI / AWS) with definition of the different pipelines for R&D department.
         tags: []
       - description: deploy serverless micro-services to manage resources and costs in the cloud.
-        tags: [Python, boto3, CloudWatch, Lambda, SQS, EC2, S3, Terraform, DynamoDB]
+        tags:
+          [Python, boto3, CloudWatch, Lambda, SQS, EC2, S3, Terraform, DynamoDB]
       - description: make the Scality S3 connector's installer compatible with offline installations.
         tags: [Ansible, CentOS/RHEL, Debian/Ubuntu, Docker, Python]
       - description: develop tools for a detailed report on the cost and cloud resources usage for each member or team of the organization.
         tags: []
       - description: monitor Github activities of the organization.
         tags: [InfluxDB, Golang]
-  - title: QA Developer
-    organization: Scality
-    website: https://www.scality.com/
-    period:
-      start: "2016-09-01T00:00:00Z"
-      end: "2016-12-30T00:00:00Z"
-    location: *paris
-    duty:
       - description: develop integration test suites for the web interface (pytest, docker, selenium) with automated build in the CI.
         tags:
           [
@@ -217,7 +222,7 @@ experience:
     website: https://www.scality.com/
     period:
       start: "2015-09-01T00:00:00Z"
-      end: "2016-09-01T00:00:00Z"
+      end: "2016-12-01T00:00:00Z"
     location: *paris
     duty:
       - description: migrate from svn to git.

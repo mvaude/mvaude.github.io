@@ -44,5 +44,7 @@ sleep 2
     printf ""
 }
 
+cp "$OUTFILE" dist/
+
 docker logs cv
 docker rm -f cv

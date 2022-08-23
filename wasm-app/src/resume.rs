@@ -110,8 +110,8 @@ impl ResumeComponent {
         let source_code = res.get_source_code();
         let source_code_https = format!("https://{}", source_code);
         let host_link = res.get_host_link();
-        let host_link_https = format!("https://{}", host_link);
-        let pdf_name = format!("https://raw.githubusercontent.com/mvaude/resume/master/{}-Resume.pdf", res.name.replace(" ", ""));
+        let host_link_https = format!("https://{}", host_link.clone());
+        let pdf_name = format!("{}/{}-Resume.pdf", host_link_https, res.name.replace(" ", ""));
         html! {
             <div class="links">
                 <h2>{ "LINKS" }</h2>
