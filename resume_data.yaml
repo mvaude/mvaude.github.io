@@ -129,11 +129,11 @@ experience:
     duty:
       - description: Transform and harden current cloud infrastructure as IaC.
         tags: [Terraform, Github Actions, tfsec, BigQuery, Composer]
-      - description: optimize CI/CD on web and data projects.
+      - description: Optimize CI/CD on web and data projects.
         tags: [Github Actions, Terraform, Helm]
       - description: Implement tools for security certifications.
         tags: [tfsec, Python, Terraform, GCP IAM]
-      - description: Discuss with teams to optimize developer workflows and harden security.
+      - description: Federate teams around developer workflows optimization and security hardening.
         tags: [Django, Airflow, Docker, Kubernetes]
       - description: Hire and guide a team of talented devops professionals.
         tags: [Python, Github Actions, Airflow, GCP IAM]
