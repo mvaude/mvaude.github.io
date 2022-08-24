@@ -1,5 +1,5 @@
 
-Maxime Vaudemv.computing@gmail.comgithub.com/mvaude/resume"mvaude.github.io/resume2
+Maxime Vaudemv.computing@gmail.comgithub.com/mvaude.github.io"mvaude.github.io2
 ParisIDFFrance:maxime-vaude-8b22465aBmvaudeJ
 Lead DevSecOps, Tech Leader.J@
 >Lifelong learner interested in automation and problem solving.J}

@@ -2,3 +2,4 @@ public
 target/
 venv/
 __pycache__/
+dist/

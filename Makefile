@@ -24,8 +24,3 @@ pdf:  ## Create a rendered PDF of the resume based on the wasm app
 
 serve:  ## Serve the `wasm-app` directory on port 8080
 	cd wasm-app && $(MAKE) serve
-
-deploy: python rust build wasm pdf
-	cp ./wasm-app/pkg/wasm* ../craftycoder.com/static/cv/pkg
-	cp ./wasm-app/pkg/bundle.js ../craftycoder.com/static/cv/pkg
-	cp ./MaximeVaude-Resume.pdf ../craftycoder.com/static/cv

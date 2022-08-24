@@ -76,7 +76,8 @@ impl Component for ResumeComponent {
                 <header class="main-header">
                     <h1 class="main-header-name">{ res.get_name().to_ascii_uppercase() }</h1>
                     <ul class="main-header-list">
-                        <li><i class="fas fa-envelope"></i>{ res.get_email() }</li>
+                        <li><a href = format!("mailto: {}", res.get_email())>
+                            <i class="fas fa-envelope"></i>{ res.get_email() }</a></li>
                         <li><PhoneNumberComponent phone=phone /></li>
                         <li><a href=format!("https://{}", &github)>
                             <i class="fab fa-github"></i>{ github }</a></li>

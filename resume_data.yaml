@@ -1,6 +1,6 @@
 name: Maxime Vaude
-source_code: github.com/mvaude/resume
-host_link: mvaude.github.io/resume
+source_code: github.com/mvaude.github.io
+host_link: mvaude.github.io
 email: mv.computing@gmail.com
 location: &paris
   city: Paris
