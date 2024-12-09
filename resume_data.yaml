@@ -1,7 +1,7 @@
 name: Maxime Vaude
 source_code: github.com/mvaude/mvaude.github.io
 host_link: mvaude.github.io
-email: mv.computing@gmail.com
+email: maxime@mvholding.io
 location: &paris
   city: Paris
   state: IDF
@@ -9,7 +9,7 @@ location: &paris
 linkedin_profile: maxime-vaude-8b22465a
 github_profile: mvaude
 about_me:
-  - description: Lead DevSecOps, Tech Leader.
+  - description: Senior Cloud Architect, Cloud Engineer, DevSecOps Engineer, Software Engineer, Tech Leader.
   - description: Lifelong learner interested in automation and problem solving.
   - description: I am equally comfortable designing a high performance complete solution, or optimize and harden solutions already in place.
   - description: Voracious reader. Gamer. Epicurean. Entrepreneur.
@@ -79,19 +79,19 @@ education:
       state: Rhone
       country: France
 experience:
-  - title: DevSecOps Freelancer
+  - title: Freelancer
     organization: MV Computing
     website: https://mvaude.github.io/
     period:
       start: "2019-09-10T00:00:00Z"
     location: *paris
     duty:
-      - description: automate tasks (building, testing, delivery, deployment, accounting, reports).
+      - description: Architect and implement end-to-end automation solutions for critical business processes, including CI/CD pipelines, testing frameworks, and financial reporting systems.
         tags:
           [Github Actions, Python, Shell, Node.js, Packer, Docker, Kubernetes]
-      - description: collaborate with agile teams to deploy and industrialize projects following "devops" culture.
+      - description: Lead cross-functional Agile teams in implementing DevOps best practices, resulting in streamlined deployment processes and improved development workflows.
         tags: [Golang, Rust, Helm, Kubernetes, Node.js, Github Actions]
-      - description: Member of team responsible for the overall cloud footprint with the goal of optimizing for reliability, security, responsiveness, and situational awareness.
+      - description: Spearhead cloud infrastructure optimization initiatives, focusing on enhancing system reliability, security posture, performance metrics, and operational visibility.
         tags:
           [
             EC2,
@@ -118,6 +118,250 @@ experience:
             Terraform,
             Python,
             Shell,
+          ]
+      - description: Design and deploy sophisticated CI/CD frameworks, reducing deployment time and improving code quality through automated testing and validation.
+      - description: Provide strategic consulting services for enterprise clients, specializing in cloud cost optimization, architecture assessment, and technical workshops to drive cloud adoption and efficiency.
+  - title: Cloud Architect
+    organization: Doit International
+    website: https://www.doit.com/
+    period:
+      start: "2023-03-01T00:00:00Z"
+      end: "2024-07-01T00:00:00Z"
+    location: *paris
+    duty:
+      - description: Create and deliver comprehensive best practices recommendations, tutorials and sample code to support diverse levels of business and technical stakeholders.
+        tags:
+          [
+            AppEngine,
+            BigQuery,
+            Bigtable,
+            Cloud Dataflow,
+            Cloud Functions,
+            Cloud Run,
+            Composer,
+            Firebase,
+            GCE,
+            GCS,
+            GKE,
+            GCP IAM,
+            IAP,
+            KMS,
+            GCP VPC,
+            Endpoint,
+            VPN Gateway,
+            Workflows,
+            EC2,
+            ECR,
+            EKS,
+            CloudFormation,
+            DynamoDB,
+            IAM,
+            KMS,
+            Lambda,
+            RDS,
+            S3,
+            AWS VPC,
+            SQS,
+            CloudWatch,
+            Karpenter
+          ]
+      - description: Serve as a subject matter expert, providing coaching and mentoring to new hires, developing and presenting training sessions, and collaborating with development teams on complex issues to drive technical excellence.
+        tags:
+          [
+            AppEngine,
+            BigQuery,
+            Bigtable,
+            Cloud Dataflow,
+            Cloud Functions,
+            Cloud Run,
+            Composer,
+            Firebase,
+            GCE,
+            GCS,
+            GKE,
+            GCP IAM,
+            IAP,
+            KMS,
+            GCP VPC,
+            Endpoint,
+            VPN Gateway,
+            Workflows,
+            EC2,
+            ECR,
+            EKS,
+            CloudFormation,
+            DynamoDB,
+            IAM,
+            KMS,
+            Lambda,
+            RDS,
+            S3,
+            AWS VPC,
+            SQS,
+            CloudWatch,
+            Karpenter
+          ]
+      - description: Develop and implement process improvements and strategic initiatives through close collaboration with leadership, leveraging expertise to optimize cloud engineering operations and drive team success.
+        tags:
+          [
+            AppEngine,
+            BigQuery,
+            Bigtable,
+            Cloud Dataflow,
+            Cloud Functions,
+            Cloud Run,
+            Composer,
+            Firebase,
+            GCE,
+            GCS,
+            GKE,
+            GCP IAM,
+            IAP,
+            KMS,
+            GCP VPC,
+            Endpoint,
+            VPN Gateway,
+            Workflows,
+            EC2,
+            ECR,
+            EKS,
+            CloudFormation,
+            DynamoDB,
+            IAM,
+            KMS,
+            Lambda,
+            RDS,
+            S3,
+            AWS VPC,
+            SQS,
+            CloudWatch,
+            Karpenter
+          ]
+  - title: Cloud Engineer
+    organization: Doit International
+    website: https://www.doit.com/
+    period:
+      start: "2022-10-01T00:00:00Z"
+      end: "2023-03-01T00:00:00Z"
+    location: *paris
+    duty:
+      - description: Utilize technical expertise and customer support skills to serve as a trusted advisor to clients, resolving complex issues spanning multiple cloud services and vendors.
+        tags:
+          [
+            AppEngine,
+            BigQuery,
+            Bigtable,
+            Cloud Dataflow,
+            Cloud Functions,
+            Cloud Run,
+            Composer,
+            Firebase,
+            GCE,
+            GCS,
+            GKE,
+            GCP IAM,
+            IAP,
+            KMS,
+            GCP VPC,
+            Endpoint,
+            VPN Gateway,
+            Workflows,
+            EC2,
+            ECR,
+            EKS,
+            CloudFormation,
+            DynamoDB,
+            IAM,
+            KMS,
+            Lambda,
+            RDS,
+            S3,
+            AWS VPC,
+            SQS,
+            CloudWatch,
+            Karpenter
+          ]
+      - description: Collaborate with customers to deliver tailored solutions, utilizing various communication channels including ticketing systems, email, Slack, and video calls to ensure effective issue resolution.
+        tags:
+          [
+            AppEngine,
+            BigQuery,
+            Bigtable,
+            Cloud Dataflow,
+            Cloud Functions,
+            Cloud Run,
+            Composer,
+            Firebase,
+            GCE,
+            GCS,
+            GKE,
+            GCP IAM,
+            IAP,
+            KMS,
+            GCP VPC,
+            Endpoint,
+            VPN Gateway,
+            Workflows,
+            EC2,
+            ECR,
+            EKS,
+            CloudFormation,
+            DynamoDB,
+            IAM,
+            KMS,
+            Lambda,
+            RDS,
+            S3,
+            AWS VPC,
+            SQS,
+            CloudWatch,
+            Karpenter
+          ]
+      - description: Partner closely with AWS, Google Cloud, and Azure teams to troubleshoot and resolve customer issues, leveraging technical expertise to drive efficient problem-solving.
+        tags:
+          [
+            AppEngine,
+            BigQuery,
+            Bigtable,
+            Cloud Dataflow,
+            Cloud Functions,
+            Cloud Run,
+            Composer,
+            Firebase,
+            GCE,
+            GCS,
+            GKE,
+            GCP IAM,
+            IAP,
+            KMS,
+            GCP VPC,
+            Endpoint,
+            VPN Gateway,
+            Workflows,
+            EC2,
+            ECR,
+            EKS,
+            CloudFormation,
+            DynamoDB,
+            IAM,
+            KMS,
+            Lambda,
+            RDS,
+            S3,
+            AWS VPC,
+            SQS,
+            CloudWatch,
+            Karpenter,
+            AKS,
+            Azure Functions,
+            Cosmos DB,
+            Azure SQL,
+            Blob Storage,
+            Container Registry,
+            Azure DevOps,
+            Pipelines,
+            Event Grid,
+            Azure VPC
           ]
   - title: Lead DevSecOps
     organization: Silvr
@@ -254,7 +498,6 @@ experience:
 skills:
   - category: GCP
     tags:
-      - AI Platform
       - AppEngine
       - BigQuery
       - Bigtable
@@ -272,6 +515,7 @@ skills:
       - GCP VPC
       - Endpoint
       - VPN Gateway
+      - Workflows
   - category: AWS
     tags:
       - EC2
@@ -287,6 +531,7 @@ skills:
       - AWS VPC
       - SQS
       - CloudWatch
+      - Karpenter
   - category: Azure
     tags:
       - AKS

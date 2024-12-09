@@ -1,7 +1,7 @@
 
-Maxime Vaudemv.computing@gmail.comgithub.com/mvaude.github.io"mvaude.github.io2
-ParisIDFFrance:maxime-vaude-8b22465aBmvaudeJ
-Lead DevSecOps, Tech Leader.J@
+Maxime Vaudemaxime@mvholding.io"github.com/mvaude/mvaude.github.io"mvaude.github.io2
+ParisIDFFrance:maxime-vaude-8b22465aBmvaudeJ]
+[Senior Cloud Architect, Cloud Engineer, DevSecOps Engineer, Software Engineer, Tech Leader.J@
 >Lifelong learner interested in automation and problem solving.J}
 {I am equally comfortable designing a high performance complete solution, or optimize and harden solutions already in place.J3
 1Voracious reader. Gamer. Epicurean. Entrepreneur.RT
@@ -26,25 +26,48 @@
 Institution Saint-Joseph
 Scientific"
 €×â¶€›‘à2
-TassinRhoneFranceZ¾
-DevSecOps FreelancerMV Computinghttps://mvaude.github.io/"
+TassinRhoneFranceZ°
+
+
+FreelancerMV Computinghttps://mvaude.github.io/"
 €ÏÛë*
-ParisIDFFrance2”
-Nautomate tasks (building, testing, delivery, deployment, accounting, reports).Github ActionsPythonShellNode.jsPackerDocker
-Kubernetes2˜
-]collaborate with agile teams to deploy and industrialize projects following "devops" culture.GolangRustHelm
-KubernetesNode.jsGithub Actions2‚
-œMember of team responsible for the overall cloud footprint with the goal of optimizing for reliability, security, responsiveness, and situational awareness.EC2ECRS3IAM	Terraform
+ParisIDFFrance2ï
+¨Architect and implement end-to-end automation solutions for critical business processes, including CI/CD pipelines, testing frameworks, and financial reporting systems.Github ActionsPythonShellNode.jsPackerDocker
+Kubernetes2Ö
+šLead cross-functional Agile teams in implementing DevOps best practices, resulting in streamlined deployment processes and improved development workflows.GolangRustHelm
+KubernetesNode.jsGithub Actions2‹
+¥Spearhead cloud infrastructure optimization initiatives, focusing on enhancing system reliability, security posture, performance metrics, and operational visibility.EC2ECRS3IAM	Terraform
 PrometheusGrafanaDatadogCloudFormationElasticsearchKibana2¥
 NDesign CI-CD systems to improve efficiency and reliability of code deployment.Github Actions	Gitlab CIHelm
-KubernetesDockerMake	TerraformPythonShellZ½
+KubernetesDockerMake	TerraformPythonShell2’
+Design and deploy sophisticated CI/CD frameworks, reducing deployment time and improving code quality through automated testing and validation.2Â
+¿Provide strategic consulting services for enterprise clients, specializing in cloud cost optimization, architecture assessment, and technical workshops to drive cloud adoption and efficiency.Zï
+Cloud ArchitectDoit Internationalhttps://www.doit.com/"
+€«úŸ€ã‡´*
+ParisIDFFrance2´
+œCreate and deliver comprehensive best practices recommendations, tutorials and sample code to support diverse levels of business and technical stakeholders.	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gateway	WorkflowsEC2ECREKSCloudFormationDynamoDBIAMKMSLambdaRDSS3AWS VPCSQS
+CloudWatch	Karpenter2ï
+×Serve as a subject matter expert, providing coaching and mentoring to new hires, developing and presenting training sessions, and collaborating with development teams on complex issues to drive technical excellence.	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gateway	WorkflowsEC2ECREKSCloudFormationDynamoDBIAMKMSLambdaRDSS3AWS VPCSQS
+CloudWatch	Karpenter2ß
+ÇDevelop and implement process improvements and strategic initiatives through close collaboration with leadership, leveraging expertise to optimize cloud engineering operations and drive team success.	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gateway	WorkflowsEC2ECREKSCloudFormationDynamoDBIAMKMSLambdaRDSS3AWS VPCSQS
+CloudWatch	KarpenterZÄ
+Cloud EngineerDoit Internationalhttps://www.doit.com/"
+€†Þ™€«úŸ*
+ParisIDFFrance2À
+¨Utilize technical expertise and customer support skills to serve as a trusted advisor to clients, resolving complex issues spanning multiple cloud services and vendors.	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gateway	WorkflowsEC2ECREKSCloudFormationDynamoDBIAMKMSLambdaRDSS3AWS VPCSQS
+CloudWatch	Karpenter2Û
+ÃCollaborate with customers to deliver tailored solutions, utilizing various communication channels including ticketing systems, email, Slack, and video calls to ensure effective issue resolution.	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gateway	WorkflowsEC2ECREKSCloudFormationDynamoDBIAMKMSLambdaRDSS3AWS VPCSQS
+CloudWatch	Karpenter2½
+§Partner closely with AWS, Google Cloud, and Azure teams to troubleshoot and resolve customer issues, leveraging technical expertise to drive efficient problem-solving.	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gateway	WorkflowsEC2ECREKSCloudFormationDynamoDBIAMKMSLambdaRDSS3AWS VPCSQS
+CloudWatch	KarpenterAKSAzure Functions	Cosmos DB	Azure SQLBlob StorageContainer RegistryAzure DevOps	Pipelines
+Event Grid	Azure VPCZÄ
 Lead DevSecOpsSilvrhttps://en.silvr.co/"
 €ðá€Ïó•*
 ParisIDFFrance2q
 9Transform and harden current cloud infrastructure as IaC.	TerraformGithub ActionstfsecBigQueryComposer2K
-(optimize CI/CD on web and data projects.Github Actions	TerraformHelm2Q
-,Implement tools for security certifications.tfsecPython	TerraformGCP IAM2n
-GDiscuss with teams to optimize developer workflows and harden security.DjangoAirflowDocker
+(Optimize CI/CD on web and data projects.Github Actions	TerraformHelm2Q
+,Implement tools for security certifications.tfsecPython	TerraformGCP IAM2u
+NFederate teams around developer workflows optimization and security hardening.DjangoAirflowDocker
 Kubernetes2c
 7Hire and guide a team of talented devops professionals.PythonGithub ActionsAirflowGCP IAMZÎ
 	DevSecOps
@@ -87,10 +110,10 @@ Wset up CI with docker workers for the static test checkers, linters, unit tests
 YDevelop engineering KPIs computing and a webapp to display them on dashboards in offices.Three.jsPythonNode.js2c
 aDefine Release and Contribution processes based on agile methodologies (mainly SCRUM and KANBAN).2X
 Vdevelop a tool to aggregate Open-Source licenses for software and system dependencies.2z
-#develop a git merging robot helper.Python	GitPythonGitJiraJenkins	Rackspace!https://github.com/scality/bert-eb³
-GCPAI Platform	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gatewaybc
+#develop a git merging robot helper.Python	GitPythonGitJiraJenkins	Rackspace!https://github.com/scality/bert-eb±
+GCP	AppEngineBigQueryBigtableCloud DataflowCloud Functions	Cloud RunComposerFirebaseGCEGCSGKEGCP IAMIAPKMSGCP VPCEndpointVPN Gateway	Workflowsbn
 AWSEC2ECREKSCloudFormationDynamoDBIAMKMSLambdaRDSS3AWS VPCSQS
-CloudWatchb…
+CloudWatch	Karpenterb…
 AzureAKSAzure Functions	Cosmos DB	Azure SQLBlob StorageContainer RegistryAzure DevOps	Pipelines
 Event Grid	Azure VPCb>
 General ProgrammingGolangRustPythonNode.jsShellCb<

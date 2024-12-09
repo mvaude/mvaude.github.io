@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-set -eux
+set -ux
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    shopt -s expand_aliases
-    chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-    alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+  shopt -s expand_aliases
+  chrome="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  alias chrome="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 elif ! [[ $(google-chrome-stable --version) ]]; then
   echo "No 'google-chrome-stable' command found for running headless PDF generation" >&2
+else
+  chrome="google-chrome-stable"
 fi
 
 if ! [[ $(python3 --version) ]]; then
@@ -34,7 +36,7 @@ docker run --rm -d --name cv -p 8080:8080 cv-server
 sleep 2
 
 {
-    google-chrome-stable --headless --disable-gpu \
+    $chrome --headless --disable-gpu \
         --run-all-compositor-stages-before-draw \
         --virtual-time-budget=20000 \
         --print-to-pdf="$OUTFILE" \
